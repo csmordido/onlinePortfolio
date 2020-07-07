@@ -1,0 +1,60 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  .logo {
+    width: 40px;
+  }
+  nav {
+    display: relative;
+  }
+}
+
+.hamburgerMenu {
+  font-size: 2.3rem;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3.2px;
+    background-color: $color-dark-grey;
+    top: 30px;
+    left: -5px;
+  }
+}
+
+input[type=checkbox] {
+  display: none;
+  position: absolute;
+}
+
+.dropDownMenu {
+  position: absolute;
+  right: 5%;
+  visibility: hidden;
+  z-index: 10;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.8s;
+  li {
+    text-align: right;
+    padding: 10px 0 10px 10px;
+    a {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      padding: 10px 0 10px 10px;
+    }
+  }
+}
+
+input[type=checkbox]:checked + ul {
+  visibility: initial;
+  height: 220px;
+  overflow: initial;
+  opacity: 1;
+}

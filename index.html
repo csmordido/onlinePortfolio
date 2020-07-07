@@ -19,23 +19,24 @@
   <!-- HEADER STARTS -->
   <header>
     <!-- MAIN NAVIGATION STARTS -->
-    <nav>
-      <div class="branding">
-        <img src="./images/logo.png" alt="">
-        <p>Eyel Mordido</p>
-      </div>
+    <div class="topBar">
+      <a href="index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+      <nav>
+        <label class="hamburgerMenu" for="menu"><span class="visuallyHidden">Drop Down Menu</span>&#9776;</label>
+        <input type="checkbox" id="menu">
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav> <!-- MAIN NAVIGATION ENDS -->
+        <ul class="dropDownMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav> 
+    </div> <!-- MAIN NAVIGATION ENDS -->
 
-    <div class="headerIntro">
+    <div class="headerIntro wrapper">
       <p>Hello! I'm</p>
-      <h1>Eyel Mordido <span>Front-End Web Developer</span></h1>
+      <h1 class="tealColor">Eyel Mordido <span>A Front-End Web Developer</span></h1>
     </div>
   </header> <!-- HEADER ENDS -->
 </body>
