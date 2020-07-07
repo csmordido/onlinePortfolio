@@ -5,11 +5,12 @@
   height: 10vh;
   width: 100%;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   padding: 0 5%;
-  background-color: rgba(235, 235, 235, 0.2);
-  box-shadow: 0 10px 10px rgba(235, 235, 235, 0.2);
+  background-color: rgba($color-light-grey, 0.5);
+  box-shadow: 0 15px 15px rgba($color-light-grey, 0.5);
   .logo {
     width: 40px;
   }
@@ -39,7 +40,7 @@ input[type=checkbox] {
 
 .dropDownMenu {
   position: absolute;
-  right: 7%;
+  right: 5%;
   visibility: hidden;
   z-index: 10;
   height: 0;
@@ -53,7 +54,7 @@ input[type=checkbox] {
     a {
       font-size: 1.4rem;
       letter-spacing: 1px;
-      padding: 10px 0 10px 10px;
+      padding: 10px;
     }
   }
 }
@@ -63,4 +64,5 @@ input[type=checkbox]:checked + ul {
   height: 220px;
   overflow: initial;
   opacity: 1;
+  box-shadow: -15px 15px 20px rgba($color-dark-grey, 0.5);
 }

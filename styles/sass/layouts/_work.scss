@@ -2,26 +2,6 @@
   margin-bottom: 120px;
 }
 
-.slidesContainer {
-  position: relative;
-  .btnsContainer {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 40px;
-    button {
-      all: unset;
-      color: $color-teal;
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-  }
-}
-
-.btnsContainer button:first-of-type {
-  margin-right: 20px;
-}
-
 .projectInfo {
   text-align: left;
   padding: 0 20px;
