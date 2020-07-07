@@ -3,7 +3,10 @@
   font-size: 3.4rem;
   height: 100vh;
   padding-top: 25vh;
-  h1 span {
+  .greyText {
+    color: $color-dark-grey;
+  }
+  .occupation {
     display: block;
     font-size: 1.1rem;
     line-height: 3;

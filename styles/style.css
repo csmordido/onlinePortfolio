@@ -345,7 +345,11 @@ input[type=checkbox]:checked + ul {
   padding-top: 25vh;
 }
 
-.intro h1 span {
+.intro .greyText {
+  color: #818181;
+}
+
+.intro .occupation {
   display: block;
   font-size: 1.1rem;
   line-height: 3;
@@ -362,7 +366,7 @@ input[type=checkbox]:checked + ul {
 
 .aboutInfo h3 {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 60px;
 }
 
