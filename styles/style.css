@@ -310,7 +310,7 @@ input[type=checkbox] {
 
 .dropDownMenu {
   position: absolute;
-  right: 5%;
+  right: 7%;
   visibility: hidden;
   z-index: 10;
   height: 0;
@@ -318,6 +318,7 @@ input[type=checkbox] {
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  background-color: #EBEBEB;
 }
 
 .dropDownMenu li {
@@ -372,4 +373,68 @@ input[type=checkbox]:checked + ul {
 
 .aboutInfo h3 span {
   display: block;
+}
+
+.project {
+  margin-bottom: 120px;
+}
+
+.slidesContainer {
+  position: relative;
+}
+
+.slidesContainer .btnsContainer {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 40px;
+}
+
+.slidesContainer .btnsContainer button {
+  all: unset;
+  color: #5F8F97;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.btnsContainer button:first-of-type {
+  margin-right: 20px;
+}
+
+.projectInfo {
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.projectInfo h2 {
+  color: #5F8F97;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.projectInfo p {
+  font-size: 1.1rem;
+  letter-spacing: initial;
+  margin-bottom: 15px;
+}
+
+.projectInfo a {
+  font-size: 1.1rem;
+  letter-spacing: initial;
+  font-weight: 400;
+  position: relative;
+  left: 50px;
+}
+
+.projectInfo a::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #818181;
+  top: 13px;
+  left: -50px;
 }

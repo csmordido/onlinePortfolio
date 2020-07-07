@@ -1,0 +1,56 @@
+.project {
+  margin-bottom: 120px;
+}
+
+.slidesContainer {
+  position: relative;
+  .btnsContainer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    button {
+      all: unset;
+      color: $color-teal;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.btnsContainer button:first-of-type {
+  margin-right: 20px;
+}
+
+.projectInfo {
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 50px;
+  h2 {
+    color: $color-teal;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.1rem;
+    letter-spacing: initial;
+    margin-bottom: 15px;
+  }
+  a {
+    font-size: 1.1rem;
+    letter-spacing: initial;
+    font-weight: 400;
+    position: relative;
+    left: 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: $color-dark-grey;
+      top: 13px;
+      left: -50px;
+    }
+  }
+}
