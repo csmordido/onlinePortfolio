@@ -193,21 +193,12 @@ textarea {
   padding: .2em 0;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -226,26 +217,92 @@ img {
   display: block;
 }
 
-body {
-  font: 400 100% 'Open Sans', sans-serif;
-  color: #9E9E9E;
-  letter-spacing: 1.5px;
-}
-
-h1 {
-  font: 500 1rem 'Quicksand', sans-serif;
-  color: #8EB9BF;
-  letter-spacing: 1px;
-}
-
-.animated-text {
-  font: 600 10rem 'Quicksand', sans-serif;
-  color: #8EB9BF;
-  letter-spacing: 6px;
-}
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+}
+
+body {
+  background-color: #EBEBEB;
+  font: 400 100% "Prompt", sans-serif;
+  color: #AEAEAE;
+}
+
+a {
+  text-decoration: none;
+  color: #89BAC2;
+  font-weight: 700;
+}
+
+.topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topBar .logo {
+  width: 40px;
+}
+
+.topBar nav {
+  display: relative;
+}
+
+.hamburgerMenu {
+  font-size: 2.3rem;
+  position: relative;
+}
+
+.hamburgerMenu::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3.2px;
+  background-color: #AEAEAE;
+  top: 30px;
+  left: -5px;
+}
+
+input[type=checkbox] {
+  display: none;
+  position: absolute;
+}
+
+.dropDownMenu {
+  position: absolute;
+  right: 5%;
+  visibility: hidden;
+  z-index: 10;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.dropDownMenu li {
+  text-align: right;
+  padding: 10px 0 10px 10px;
+}
+
+.dropDownMenu li a {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 10px;
+}
+
+input[type=checkbox]:checked + ul {
+  visibility: initial;
+  height: 220px;
+  overflow: initial;
+  opacity: 1;
 }
