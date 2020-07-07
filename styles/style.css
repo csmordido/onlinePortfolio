@@ -226,18 +226,18 @@ img {
 body {
   background-color: #EBEBEB;
   font: 400 100% "Prompt", sans-serif;
-  color: #AEAEAE;
+  color: #818181;
   letter-spacing: 1px;
 }
 
 a {
   text-decoration: none;
-  color: #89BAC2;
+  color: #5F8F97;
   font-weight: 700;
 }
 
 .tealColor {
-  color: #89BAC2;
+  color: #5F8F97;
 }
 
 .topBar {
@@ -271,11 +271,11 @@ a {
 .hamburgerMenu::before {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 3.2px;
-  background-color: #AEAEAE;
-  top: 30px;
-  left: -5px;
+  width: 33px;
+  height: 3.4px;
+  background-color: #818181;
+  top: 30.2px;
+  right: 6px;
 }
 
 input[type=checkbox] {
@@ -317,12 +317,12 @@ input[type=checkbox]:checked + ul {
   font-weight: 500;
   font-size: 2.6rem;
   height: 90vh;
-  padding-top: 100px;
+  padding-top: 20vh;
 }
 
 .intro h1 span {
   display: block;
   font-size: 1.1rem;
   line-height: 3;
-  color: #AEAEAE;
+  color: #818181;
 }

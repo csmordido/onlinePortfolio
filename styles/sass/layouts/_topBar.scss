@@ -19,11 +19,11 @@
   &::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 3.2px;
+    width: 33px;
+    height: 3.4px;
     background-color: $color-dark-grey;
-    top: 30px;
-    left: -5px;
+    top: 30.2px;
+    right: 6px;
   }
 }
 
