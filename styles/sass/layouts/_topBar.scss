@@ -3,8 +3,13 @@
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 5%;
+  background-color: rgba(235, 235, 235, 0.2);
+  box-shadow: 0 10px 10px rgba(235, 235, 235, 0.2);
   .logo {
     width: 40px;
   }

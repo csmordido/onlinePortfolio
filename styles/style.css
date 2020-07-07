@@ -240,6 +240,25 @@ a {
   color: #5F8F97;
 }
 
+.content {
+  padding-top: 22vh;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.title {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
 .topBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,8 +270,14 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 5%;
+  background-color: rgba(235, 235, 235, 0.2);
+  -webkit-box-shadow: 0 10px 10px rgba(235, 235, 235, 0.2);
+          box-shadow: 0 10px 10px rgba(235, 235, 235, 0.2);
 }
 
 .topBar .logo {
@@ -315,9 +340,9 @@ input[type=checkbox]:checked + ul {
 
 .intro {
   font-weight: 500;
-  font-size: 2.6rem;
-  height: 90vh;
-  padding-top: 20vh;
+  font-size: 3.4rem;
+  height: 100vh;
+  padding-top: 25vh;
 }
 
 .intro h1 span {
@@ -325,4 +350,22 @@ input[type=checkbox]:checked + ul {
   font-size: 1.1rem;
   line-height: 3;
   color: #818181;
+}
+
+.aboutInfo h2 {
+  color: #5F8F97;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.aboutInfo h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+}
+
+.aboutInfo h3 span {
+  display: block;
 }
