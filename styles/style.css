@@ -313,14 +313,14 @@ input[type=checkbox]:checked + ul {
   opacity: 1;
 }
 
-.headerIntro {
+.intro {
   font-weight: 500;
   font-size: 2.6rem;
   height: 90vh;
   padding-top: 100px;
 }
 
-.headerIntro h1 span {
+.intro h1 span {
   display: block;
   font-size: 1.1rem;
   line-height: 3;
