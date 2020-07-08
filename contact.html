@@ -13,7 +13,7 @@
 
   
   <!-- FAVICON -->
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"> 
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"> 
 
   <!-- FONT AWESOME KIT -->
   <script src="https://kit.fontawesome.com/f66c1e0420.js" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
 
   <!-- HEADER STARTS -->
   <header class="topBar">
-    <a href="index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+    <a href="index.html"><img src="./assets/logo.png" alt="" class="logo"></a>
     <!-- NAVIGATION STARTS -->
     <nav> 
       <label for="menu"><span class="visuallyHidden">Drop Down Menu</span><div class="hamburgerMenu"></div></label>
@@ -45,10 +45,6 @@
     <img class="contactImg" src="http://placeimg.com/260/260/animals/grayscale" alt="">
 
     <div class="contactInfo">
-      <address>
-        <p>eyelmordido@gmail.com</p>
-        <p>123-456-7890</p>
-      </adress>
       <ul class="sns">
         <li><a href="https://twitter.com/eyel_mordido/"><i class="fab fa-twitter"></i></a></li>
         <li><a href="https://github.com/csmordido/"><i class="fab fa-github"></i></a></li>
@@ -56,22 +52,20 @@
       </ul>
     </div>
 
-    <button class="contactBtn" type="button">Send a message</button>
-
     <form action="#">
       <fieldset>
         <legend>Contact Form</legend>
 
         <label class="visuallyHidden" for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="text" id="name" name="name" placeholder="Name" required>
         
         <label class="visuallyHidden" for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="E-mail">
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
         
         <label class="visuallyHidden" for="message">Type message here</label>
         <textarea id="message" name="message" placeholder="How can I help you?" rows="5"></textarea>
 
-        <button type="submit" class="formBtn">Send</button>
+        <button type="submit" class="formBtn">Send a message</button>
       </fieldset>
     </form>
 

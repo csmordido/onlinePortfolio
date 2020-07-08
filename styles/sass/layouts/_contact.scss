@@ -1,6 +1,9 @@
+.contactMain {
+  margin-bottom: 110px;
+}
+
 .contactInfo {
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin: 70px 0;
   p:last-of-type {
     margin-top: 15px;
   }
@@ -13,28 +16,12 @@
     a {
       display: block;
       padding: 0 10px;
+      font-size: 1.6rem;
     }
   }
 }
 
-.contactBtn {
-  all: unset;
-  font-size: 1rem;
-  border: 3px solid $color-teal;
-  padding: 13px 20px;
-  border-radius: 50px;
-  margin-bottom: 110px;
-  cursor: pointer;
-}
-
-.contactMain {
-  position: relative;
-}
-
 form {
-  position: absolute;
-  z-index: 5;
-  // top: 22vh;
   width: 100%;
   padding: 50px 5%;
   margin: 0 auto;
@@ -47,7 +34,6 @@ form {
     text-align: left;
     margin: 0 auto 70px auto;
     line-height: 0;
-    text-align: center;
   }
   input, textarea {
     width: 100%;

@@ -346,7 +346,7 @@ input[type=checkbox] {
 
 .dropDownMenu {
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 5%;
   visibility: hidden;
   overflow: hidden;
@@ -390,7 +390,7 @@ input[type=checkbox]:checked + ul {
 
 .intro .occupation {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 3;
   color: #818181;
 }
@@ -466,9 +466,12 @@ input[type=checkbox]:checked + ul {
   margin-bottom: 0;
 }
 
+.contactMain {
+  margin-bottom: 110px;
+}
+
 .contactInfo {
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin: 70px 0;
 }
 
 .contactInfo p:last-of-type {
@@ -486,25 +489,10 @@ input[type=checkbox]:checked + ul {
 .sns li a {
   display: block;
   padding: 0 10px;
-}
-
-.contactBtn {
-  all: unset;
-  font-size: 1rem;
-  border: 3px solid #5F8F97;
-  padding: 13px 20px;
-  border-radius: 50px;
-  margin-bottom: 110px;
-  cursor: pointer;
-}
-
-.contactMain {
-  position: relative;
+  font-size: 1.6rem;
 }
 
 form {
-  position: absolute;
-  z-index: 5;
   width: 100%;
   padding: 50px 5%;
   margin: 0 auto;
@@ -519,7 +507,6 @@ form legend {
   text-align: left;
   margin: 0 auto 70px auto;
   line-height: 0;
-  text-align: center;
 }
 
 form input, form textarea {
