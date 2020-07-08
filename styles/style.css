@@ -436,3 +436,22 @@ input[type=checkbox]:checked + ul {
   top: 13px;
   left: -50px;
 }
+
+.projTechs {
+  font-size: 1.1rem;
+  color: #5F8F97;
+  margin-bottom: 70px;
+}
+
+.projTechs li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.projImgs li {
+  margin-bottom: 50px;
+}
+
+.projImgs li:last-of-type {
+  margin-bottom: 70px;
+}
