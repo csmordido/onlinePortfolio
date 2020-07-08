@@ -461,3 +461,20 @@ input[type=checkbox]:checked + ul {
 .contactInfo {
   margin-top: 70px;
 }
+
+.contactInfo p:last-of-type {
+  margin-top: 15px;
+}
+
+.sns {
+  margin-top: 15px;
+}
+
+.sns li {
+  display: inline-block;
+}
+
+.sns li a {
+  display: block;
+  padding: 0 10px;
+}
