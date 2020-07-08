@@ -469,6 +469,11 @@ a.resume {
   margin-bottom: 120px;
 }
 
+.project img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .projectInfo {
   text-align: left;
   padding: 0 20px;
