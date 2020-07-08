@@ -480,7 +480,7 @@ input[type=checkbox]:checked + ul {
   padding: 0 10px;
 }
 
-.showFormBtn {
+.contactBtn {
   all: unset;
   font-size: 1rem;
   border: 3px solid #5F8F97;
@@ -496,9 +496,8 @@ input[type=checkbox]:checked + ul {
 form {
   position: absolute;
   z-index: 10;
-  top: 22vh;
   width: 100%;
-  padding: 30px 5%;
+  padding: 50px 5%;
   margin: 0 auto;
   background-color: #818181;
   color: #EBEBEB;
@@ -509,11 +508,46 @@ form legend {
   font-size: 2rem;
   font-weight: 500;
   text-align: left;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  line-height: 0;
 }
 
 form input, form textarea {
   width: 100%;
   font: 400 1rem 'Prompt', sans-serif;
   letter-spacing: 1px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 3px solid #EBEBEB;
+  color: #EBEBEB;
+  margin-bottom: 30px;
+}
+
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+form input::placeholder, form textarea::placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+.formBtn {
+  all: unset;
+  font-size: 1rem;
+  border: 3px solid #EBEBEB;
+  padding: 13px 20px;
+  border-radius: 50px;
 }
