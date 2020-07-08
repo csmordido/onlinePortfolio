@@ -11,10 +11,17 @@
   }
 }
 
-.projImgs li {
-  margin-bottom: 50px;
+.projImgs {
+  margin-bottom: 110px;
+  li {
+    margin-bottom: 50px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.projImgs li:last-of-type {
-  margin-bottom: 70px;
-}
+// .projImgs 
+
+// .projImgs li
+// }

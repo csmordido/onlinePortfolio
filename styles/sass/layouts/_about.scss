@@ -1,16 +1,18 @@
-.aboutInfo h2 {
-  color: $color-teal;
-  font-size: 2.4rem;
-  font-weight: 500;
-  margin-top: 70px;
-  margin-bottom: 50px;
-}
-
-.aboutInfo h3 {
-  font-weight: 500;
-  font-size: 1.2rem;
-  margin-bottom: 60px;
-  span {
-    display: block;
+.aboutInfo {
+  margin-bottom: 110px;
+  h2 {
+    color: $color-teal;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    span {
+      display: block;
+    }
   }
 }

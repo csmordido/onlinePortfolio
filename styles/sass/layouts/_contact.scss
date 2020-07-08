@@ -24,6 +24,7 @@
   padding: 13px 20px;
   border-radius: 50px;
   margin-bottom: 110px;
+  cursor: pointer;
 }
 
 .contactMain {
@@ -32,7 +33,7 @@
 
 form {
   position: absolute;
-  z-index: 10;
+  z-index: 5;
   // top: 22vh;
   width: 100%;
   padding: 50px 5%;
@@ -44,8 +45,9 @@ form {
     font-size: 2rem;
     font-weight: 500;
     text-align: left;
-    margin-bottom: 70px;
+    margin: 0 auto 70px auto;
     line-height: 0;
+    text-align: center;
   }
   input, textarea {
     width: 100%;
@@ -70,4 +72,5 @@ form {
   border: 3px solid $color-light-grey;
   padding: 13px 20px;
   border-radius: 50px;
+  cursor: pointer;
 }
