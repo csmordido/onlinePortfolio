@@ -460,6 +460,7 @@ input[type=checkbox]:checked + ul {
 
 .contactInfo {
   margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .contactInfo p:last-of-type {
@@ -467,7 +468,7 @@ input[type=checkbox]:checked + ul {
 }
 
 .sns {
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .sns li {
@@ -477,4 +478,42 @@ input[type=checkbox]:checked + ul {
 .sns li a {
   display: block;
   padding: 0 10px;
+}
+
+.showFormBtn {
+  all: unset;
+  font-size: 1rem;
+  border: 3px solid #5F8F97;
+  padding: 13px 20px;
+  border-radius: 50px;
+  margin-bottom: 110px;
+}
+
+.contactMain {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  z-index: 10;
+  top: 22vh;
+  width: 100%;
+  padding: 30px 5%;
+  margin: 0 auto;
+  background-color: #818181;
+  color: #EBEBEB;
+  border-radius: 5px;
+}
+
+form legend {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+form input, form textarea {
+  width: 100%;
+  font: 400 1rem 'Prompt', sans-serif;
+  letter-spacing: 1px;
 }

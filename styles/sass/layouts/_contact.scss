@@ -1,17 +1,54 @@
 .contactInfo {
   margin-top: 70px;
+  margin-bottom: 50px;
   p:last-of-type {
     margin-top: 15px;
   }
 }
 
 .sns {
-  margin-top: 15px;
+  margin-top: 50px;
   li {
   display: inline-block;
     a {
       display: block;
       padding: 0 10px;
     }
+  }
+}
+
+.showFormBtn {
+  all: unset;
+  font-size: 1rem;
+  border: 3px solid $color-teal;
+  padding: 13px 20px;
+  border-radius: 50px;
+  margin-bottom: 110px;
+}
+
+.contactMain {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  z-index: 10;
+  top: 22vh;
+  width: 100%;
+  padding: 30px 5%;
+  margin: 0 auto;
+  background-color: $color-dark-grey;
+  color: $color-light-grey;
+  border-radius: 5px;
+  legend {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  input, textarea {
+    width: 100%;
+    font: 400 1rem 'Prompt', sans-serif;
+    letter-spacing: 1px;
   }
 }

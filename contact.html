@@ -39,10 +39,11 @@
   </header> <!-- HEADER ENDS -->
 
   <!-- MAIN STARTS -->
-  <main class="content wrapper">
+  <main class="content wrapper contactMain">
     <h1 class="title">Contact</h1>
     <p class="subtitle">Say "Hi!" :)</p>
     <img class="contactImg" src="http://placeimg.com/260/260/animals/grayscale" alt="">
+
     <div class="contactInfo">
       <address>
         <p>eyelmordido@gmail.com</p>
@@ -54,6 +55,24 @@
         <li><a href="https://linkedin.com/in/eyel-mordido"><i class="fab fa-linkedin-in"></i></a></li>
       </ul>
     </div>
+
+    <button class="showFormBtn" type="button">Send a message</button>
+
+    <form action="#">
+      <fieldset>
+        <legend>Contact Form</legend>
+
+        <label class="visuallyHidden" for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+        
+        <label class="visuallyHidden" for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="E-mail">
+        
+        <label class="visuallyHidden" for="message">Type message here</label>
+        <textarea id="message" name="message" placeholder="How can I help you?" rows="5"></textarea>
+      </fieldset>
+    </form>
+
   </main> <!-- MAIN ENDS -->
   
 </body>
