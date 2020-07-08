@@ -8,7 +8,23 @@ body {
 a {
   text-decoration: none;
   color: $color-teal;
-  font-weight: 700;
+  font-weight: 500;
+}
+
+.bodyLink {
+  font-size: 1.1rem;
+  font-weight: 400;
+  position: relative;
+  left: 50px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: $color-dark-grey;
+    top: 13px;
+    left: -50px;
+  }
 }
 
 .tealColor {

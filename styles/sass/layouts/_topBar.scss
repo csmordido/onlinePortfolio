@@ -27,14 +27,14 @@
 .hamburgerMenu {
   height: 3.4px;
   width: 30px;
-  background-color: $color-dark-grey;
+  background-color: $color-teal;
   position: relative;
   &::before {
     content: '';
     position: absolute;
     width: 40px;
     height: 3.4px;
-    background-color: $color-dark-grey;
+    background-color: $color-teal;
     top: -7px;
     right: 0;
   }
@@ -43,7 +43,7 @@
     position: absolute;
     width: 20px;
     height: 3.4px;
-    background-color: $color-dark-grey;
+    background-color: $color-teal;
     top: 7px;
     right: 0;
   }

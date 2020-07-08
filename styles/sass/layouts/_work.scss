@@ -17,20 +17,4 @@
     letter-spacing: initial;
     margin-bottom: 15px;
   }
-  a {
-    font-size: 1.1rem;
-    letter-spacing: initial;
-    font-weight: 400;
-    position: relative;
-    left: 50px;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background-color: $color-dark-grey;
-      top: 13px;
-      left: -50px;
-    }
-  }
 }
