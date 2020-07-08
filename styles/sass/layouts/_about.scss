@@ -16,3 +16,40 @@
     }
   }
 }
+
+.skills {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  h3{
+    margin-bottom: 30px;
+  }
+  ul {
+    text-align: left;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.skills li {
+  text-align: center;
+  padding: 15px 10px;
+  img {
+    height: 30px;
+  }
+  figcaption {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+}
+
+a.resume {
+  color: $color-dark-grey;
+  font-size: 1rem;
+  border: 3px solid $color-teal;
+  padding: 13px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+}
