@@ -346,7 +346,7 @@ input[type=checkbox] {
 
 .dropDownMenu {
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 5%;
   visibility: hidden;
   overflow: hidden;
@@ -390,9 +390,13 @@ input[type=checkbox]:checked + ul {
 
 .intro .occupation {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 3;
   color: #818181;
+}
+
+.aboutInfo {
+  margin-bottom: 110px;
 }
 
 .aboutInfo h2 {
@@ -450,10 +454,98 @@ input[type=checkbox]:checked + ul {
   padding: 5px 15px;
 }
 
+.projImgs {
+  margin-bottom: 110px;
+}
+
 .projImgs li {
   margin-bottom: 50px;
 }
 
 .projImgs li:last-of-type {
-  margin-bottom: 70px;
+  margin-bottom: 0;
+}
+
+.contactMain {
+  margin-bottom: 110px;
+}
+
+.contactInfo {
+  margin: 70px 0;
+}
+
+.contactInfo p:last-of-type {
+  margin-top: 15px;
+}
+
+.sns {
+  margin-top: 50px;
+}
+
+.sns li {
+  display: inline-block;
+}
+
+.sns li a {
+  display: block;
+  padding: 0 10px;
+  font-size: 1.6rem;
+}
+
+form {
+  width: 100%;
+  padding: 50px 5%;
+  margin: 0 auto;
+  background-color: #818181;
+  color: #EBEBEB;
+  border-radius: 5px;
+}
+
+form legend {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: left;
+  margin: 0 auto 70px auto;
+  line-height: 0;
+}
+
+form input, form textarea {
+  width: 100%;
+  font: 400 1rem 'Prompt', sans-serif;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 3px solid #EBEBEB;
+  color: #EBEBEB;
+  margin-bottom: 30px;
+}
+
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+form input::placeholder, form textarea::placeholder {
+  opacity: 1;
+  color: #EBEBEB;
+}
+
+.formBtn {
+  all: unset;
+  font-size: 1rem;
+  border: 3px solid #EBEBEB;
+  padding: 13px 20px;
+  border-radius: 50px;
+  cursor: pointer;
 }

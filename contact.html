@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">  
+
+  <!-- EXTERNAL STYLESHEET -->
+  <link rel="stylesheet" href="./styles/style.css">
+
+  
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"> 
+
+  <!-- FONT AWESOME KIT -->
+  <script src="https://kit.fontawesome.com/f66c1e0420.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- HEADER STARTS -->
+  <header class="topBar">
+    <a href="index.html"><img src="./assets/logo.png" alt="" class="logo"></a>
+    <!-- NAVIGATION STARTS -->
+    <nav> 
+      <label for="menu"><span class="visuallyHidden">Drop Down Menu</span><div class="hamburgerMenu"></div></label>
+      <input type="checkbox" id="menu">
+
+      <ul class="dropDownMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav> <!-- NAVIGATION ENDS -->
+  </header> <!-- HEADER ENDS -->
+
+  <!-- MAIN STARTS -->
+  <main class="content wrapper contactMain">
+    <h1 class="title">Contact</h1>
+    <p class="subtitle">Say "Hi!" :)</p>
+    <img class="contactImg" src="http://placeimg.com/260/260/animals/grayscale" alt="">
+
+    <div class="contactInfo">
+      <ul class="sns">
+        <li><a href="https://twitter.com/eyel_mordido/"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/csmordido/"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/eyel-mordido"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+
+    <form action="#">
+      <fieldset>
+        <legend>Contact Form</legend>
+
+        <label class="visuallyHidden" for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        
+        <label class="visuallyHidden" for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        
+        <label class="visuallyHidden" for="message">Type message here</label>
+        <textarea id="message" name="message" placeholder="How can I help you?" rows="5"></textarea>
+
+        <button type="submit" class="formBtn">Send a message</button>
+      </fieldset>
+    </form>
+
+  </main> <!-- MAIN ENDS -->
+  
+</body>
+</html>
