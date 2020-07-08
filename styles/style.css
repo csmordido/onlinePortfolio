@@ -457,3 +457,7 @@ input[type=checkbox]:checked + ul {
 .projImgs li:last-of-type {
   margin-bottom: 70px;
 }
+
+.contactInfo {
+  margin-top: 70px;
+}
