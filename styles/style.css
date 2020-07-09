@@ -417,6 +417,10 @@ input[type=checkbox]:checked + ul {
   display: block;
 }
 
+.aboutDetails {
+  margin-bottom: 110px;
+}
+
 .skills {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -601,4 +605,99 @@ form input::placeholder, form textarea::placeholder {
   padding: 13px 20px;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .topBar .logo {
+    width: 70px;
+  }
+  .hamburgerMenu {
+    height: 4px;
+  }
+  .hamburgerMenu::before {
+    height: 4px;
+    top: -8px;
+  }
+  .hamburgerMenu::after {
+    height: 4px;
+    top: 8px;
+  }
+  input[type="checkbox"]:checked + ul {
+    height: 260px;
+  }
+  .dropDownMenu {
+    top: 65px;
+  }
+  .dropDownMenu li a {
+    font-size: 1.8rem;
+  }
+  .intro {
+    font-size: 6rem;
+  }
+  .intro .occupation {
+    font-size: 2.2rem;
+  }
+  .content {
+    padding-top: 15vh;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .subtitle {
+    font-size: 1.8rem;
+  }
+  .aboutInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .aboutInfo h2 {
+    font-size: 4rem;
+    position: absolute;
+    left: 200px;
+    top: 70px;
+    margin-top: initial;
+    margin-bottom: initial;
+  }
+  .aboutInfo h3 {
+    font-size: 1.7rem;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    margin-bottom: initial;
+  }
+  .aboutImg {
+    width: 343px;
+    margin-right: 10px;
+  }
+  .aboutTitles {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .aboutImg, .aboutTitles {
+    -ms-flex-preferred-size: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+  }
+  .aboutDetails p {
+    max-width: 495px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .skills {
+    max-width: 495px;
+    margin: 60px auto;
+  }
+  .projectInfo {
+    padding-left: 60px;
+  }
+  .projectInfo h2 {
+    font-size: 2.4rem;
+  }
+  .projTechs li {
+    display: inline-block;
+  }
+  .sns li a {
+    font-size: 2rem;
+  }
 }
