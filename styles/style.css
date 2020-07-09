@@ -417,6 +417,11 @@ input[type=checkbox]:checked + ul {
   display: block;
 }
 
+.aboutImg {
+  -webkit-filter: grayscale(100%) contrast(85%);
+          filter: grayscale(100%) contrast(85%);
+}
+
 .aboutDetails {
   margin-bottom: 110px;
 }
@@ -708,6 +713,11 @@ form input::placeholder, form textarea::placeholder {
 }
 
 @media (min-width: 940px) {
+  .topBar {
+    background-color: initial;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
+  }
   .title {
     font-size: 7rem;
   }
@@ -718,8 +728,6 @@ form input::placeholder, form textarea::placeholder {
     max-width: 518px;
     -ms-flex-preferred-size: calc(60% - 10px);
         flex-basis: calc(60% - 10px);
-    -webkit-filter: grayscale(100%) contrast(85%);
-            filter: grayscale(100%) contrast(85%);
     -webkit-transition: -webkit-filter 0.8s;
     transition: -webkit-filter 0.8s;
     transition: filter 0.8s;

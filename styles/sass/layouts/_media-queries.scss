@@ -114,6 +114,11 @@
 
 ////////// DESKTOP LAYOUT //////////
 @media (min-width: 940px) {
+  .topBar {
+    background-color: initial;
+    box-shadow: initial;
+  }
+
   // .hamburgerMenu {
   //   display: none;
   // }
@@ -129,7 +134,6 @@
   .aboutImg {
     max-width: 518px;
     flex-basis: calc(60% - 10px);
-    filter: grayscale(100%) contrast(85%);
     transition: filter 0.8s;
   }
 
