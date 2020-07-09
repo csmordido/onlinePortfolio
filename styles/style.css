@@ -718,6 +718,16 @@ form input::placeholder, form textarea::placeholder {
     max-width: 518px;
     -ms-flex-preferred-size: calc(60% - 10px);
         flex-basis: calc(60% - 10px);
+    -webkit-filter: grayscale(100%) contrast(85%);
+            filter: grayscale(100%) contrast(85%);
+    -webkit-transition: -webkit-filter 0.8s;
+    transition: -webkit-filter 0.8s;
+    transition: filter 0.8s;
+    transition: filter 0.8s, -webkit-filter 0.8s;
+  }
+  .aboutImg:hover {
+    -webkit-filter: none;
+            filter: none;
   }
   .aboutTitles {
     -ms-flex-preferred-size: calc(40% - 10px);
