@@ -113,8 +113,37 @@
 }
 
 ////////// DESKTOP LAYOUT //////////
-// @media (min-width: 940px) {
- 
+@media (min-width: 940px) {
+ .title {
+   font-size: 7rem;
+ }
+
+ .subtitle {
+   font-size: 2.3rem;
+ }
+
+ .aboutImg {
+   max-width: 518px;
+   flex-basis: calc(60% - 10px);
+ }
+
+ .aboutTitles {
+   flex-basis: calc(40% - 10px);
+ }
+
+ .aboutInfo {
+   max-width: 940px;
+   h2 {
+     right: 7vw;
+     left: initial;
+     top: 150px;
+     font-size: 4.5rem;
+   }
+   h3 {
+     font-size: 1.8rem;
+     bottom: 100px;
+   }
+ }
 
 
-// }
+}
