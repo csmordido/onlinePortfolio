@@ -41,7 +41,7 @@
   <!-- MAIN STARTS -->
   <main class="content wrapper contactMain">
     <h1 class="title">Contact</h1>
-    <p class="subtitle">Say "Hi!" :)</p>
+    <p class="subtitle">Collaborations, commissions, <br>or just say "Hi!" :)</p>
     <img class="contactImg" src="http://placeimg.com/260/260/animals/grayscale" alt="">
 
     <div class="contactInfo">
@@ -52,9 +52,11 @@
       </ul>
     </div>
 
-    <form action="#">
+    <form action="https://formspree.io/mgennbkk"
+    method="POST">
       <fieldset>
         <legend>Contact Form</legend>
+        <p>All fields are required.</p>
 
         <label class="visuallyHidden" for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Name" required>
@@ -63,7 +65,7 @@
         <input type="email" id="email" name="email" placeholder="E-mail" required>
         
         <label class="visuallyHidden" for="message">Type message here</label>
-        <textarea id="message" name="message" placeholder="How can I help you?" rows="5"></textarea>
+        <textarea id="message" name="message" placeholder="How can I help you?" rows="5" required></textarea>
 
         <button type="submit" class="formBtn">Send a message</button>
       </fieldset>
