@@ -651,6 +651,8 @@ form input::placeholder, form textarea::placeholder {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    max-width: 691px;
+    margin: 0 auto 110px auto;
   }
   .aboutInfo h2 {
     font-size: 4rem;
@@ -687,6 +689,9 @@ form input::placeholder, form textarea::placeholder {
   .skills {
     max-width: 495px;
     margin: 60px auto;
+  }
+  .skills li img {
+    height: 40px;
   }
   .projectInfo {
     padding-left: 60px;

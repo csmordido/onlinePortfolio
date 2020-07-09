@@ -48,6 +48,8 @@
   .aboutInfo {
     display: flex;
     position: relative;
+    max-width: 691px;
+    margin: 0 auto 110px auto;
     h2 {
       font-size: 4rem;
       position: absolute;
@@ -88,6 +90,9 @@
   .skills {
     max-width: 495px;
     margin: 60px auto;
+    li img {
+      height: 40px;
+    }
   }
 
   .projectInfo {
