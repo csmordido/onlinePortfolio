@@ -123,35 +123,27 @@ app.projects = [
   }
 ];
 
-app.displayProjectData = function() {
-  console.log("xxx", app.index);
-  const title = app.projects[0].title;
-  
+// app.displayProjectData = function() {
+//   console.log("xxx", app.index);
+//   const title = app.projects[0].title;
+//   $("#projectContainer").html(`
+//     <h1 class="title">${title}</h1>
+//   `); 
+// }
 
-  $("#projectContainer").html(`
-    <h1 class="title">${title}</h1>
-  `);
-  
-}
-
-app.displayProject = function() {
-  $(".viewProject").on("click", function() {
-    window.location.href = "projectPage.html";
-    app.index = $(this).data("value");
-    console.log("x", app.index);
-    
-    
-
-    
-    
-  });
-}
+// app.displayProject = function() {
+//   $(".viewProject").on("click", function() {
+//     window.location.href = "projectPage.html";
+//     app.index = $(this).data("value");
+//     console.log("x", app.index); 
+//   });
+// }
 
 
 app.init = function() {
-  app.displayProject();
-  console.log("aaa", $("#projectPage").length);
-  console.log("xx", app.index);
+  // app.displayProject();
+  // console.log("aaa", $("#projectPage").length);
+  // console.log("xx", app.index);
   // if ($("#projectPage").length > 0) {
   //   app.displayProjectData();
   // }
