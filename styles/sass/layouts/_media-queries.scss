@@ -200,5 +200,13 @@
     transform: scale(1.1);
   }
 
+  .bodyLink:hover, .bodyLink:focus {
+    color: $color-teal;
+  }
+
+  .bodyLink:hover::before, .bodyLink:focus::before {
+    background-color: $color-teal;
+  }
+
 
 }

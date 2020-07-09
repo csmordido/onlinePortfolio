@@ -239,8 +239,11 @@ a {
 .bodyLink {
   font-size: 1.1rem;
   font-weight: 400;
+  color: #818181;
   position: relative;
   left: 50px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 .bodyLink::before {
@@ -251,6 +254,8 @@ a {
   background-color: #818181;
   top: 13px;
   left: -50px;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .tealColor {
@@ -274,6 +279,8 @@ a {
   font-size: 1.6rem;
   margin-top: 20px;
   margin-bottom: 70px;
+  max-width: 1000px;
+  margin: 20px auto 70px auto;
 }
 
 .topBar {
@@ -809,5 +816,11 @@ form input::placeholder, form textarea::placeholder {
             filter: none;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  .bodyLink:hover, .bodyLink:focus {
+    color: #5F8F97;
+  }
+  .bodyLink:hover::before, .bodyLink:focus::before {
+    background-color: #5F8F97;
   }
 }
