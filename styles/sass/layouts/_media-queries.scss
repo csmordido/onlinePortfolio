@@ -1,3 +1,14 @@
+////////// LANDSCAPE PHONES //////////
+
+@media (min-width: 480px) {
+  .intro {
+    height: 95vh;
+  }
+  .indexFooter {
+    height: 5vh;
+  }
+}
+
 ////////// TABLET LAYOUT //////////
 
 @media (min-width: 768px) {
@@ -79,7 +90,8 @@
     margin-left: 10px;
   }
 
-  .aboutImg, .aboutTitles {
+  .aboutImg, 
+  .aboutTitles {
     flex-basis: calc(50% - 10px);
   }
 
@@ -121,9 +133,39 @@
     box-shadow: initial;
   }
 
-  // .hamburgerMenu {
-  //   display: none;
-  // }
+  .topBar nav label {
+    display: none;
+  }
+
+  .logo {
+    transition: transform 0.4s;
+  }
+
+  .logo:hover,
+  .logo:focus {
+    transform: rotate(360deg);
+  } 
+
+  .dropDownMenu {
+    height: initial;
+    opacity: 1;
+    overflow: visible;
+    visibility: initial;
+    position: initial;
+    background-color: initial;
+    li {
+      display: inline-block;
+      a {
+        font-size: 1.3rem;
+        transition: color 0.4s;
+      }
+    }
+  }
+
+  .dropDownMenu li a:hover,
+  .dropDownMenu li a:focus {
+    color: $color-dark-grey;
+  }
 
   .title {
     font-size: 7rem;
@@ -211,11 +253,13 @@
     transform: scale(1.1);
   }
 
-  .bodyLink:hover, .bodyLink:focus {
+  .bodyLink:hover, 
+  .bodyLink:focus {
     color: $color-teal;
   }
 
-  .bodyLink:hover::before, .bodyLink:focus::before {
+  .bodyLink:hover::before, 
+  .bodyLink:focus::before {
     background-color: $color-teal;
   }
 
@@ -227,8 +271,23 @@
     transform: rotate(360deg);
   } 
 
+  form input,
+  form textarea {
+    transition: box-shadow 0.4s;
+  }
+
   form {
     max-width: 900px;
+    input {
+      &:focus {
+        box-shadow: -10px 10px 8px rgba(black, 0.3);
+      }
+    }
+    textarea {
+      &:focus {
+        box-shadow: -10px 10px 8px rgba(black, 0.3);
+      }
+    }
   }
 
   .formBtn {
@@ -238,5 +297,4 @@
   .formBtn:hover {
     background-color: $color-teal;
   }
-
 }

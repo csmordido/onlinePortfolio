@@ -1,8 +1,11 @@
 .intro {
   font-weight: 500;
   font-size: 3.4rem;
-  height: 100vh;
-  padding-top: 25vh;
+  height: 92.5vh;
+  padding-top: 22vh;
+  p {
+    word-break: break-all;
+  }
   .greyText {
     color: $color-dark-grey;
   }
@@ -12,4 +15,8 @@
     line-height: 3;
     color: $color-dark-grey;
   }
+}
+
+.indexFooter {
+  height: 7.5vh;
 }
