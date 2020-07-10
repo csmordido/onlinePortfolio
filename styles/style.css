@@ -457,6 +457,10 @@ input[type=checkbox]:checked + ul {
   margin-bottom: 110px;
 }
 
+.aboutDetails p:last-of-type {
+  margin-top: 20px;
+}
+
 .skills {
   margin-top: 60px;
   margin-bottom: 60px;
