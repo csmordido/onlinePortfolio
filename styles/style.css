@@ -239,8 +239,11 @@ a {
 .bodyLink {
   font-size: 1.1rem;
   font-weight: 400;
+  color: #818181;
   position: relative;
   left: 50px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 .bodyLink::before {
@@ -251,6 +254,8 @@ a {
   background-color: #818181;
   top: 13px;
   left: -50px;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .tealColor {
@@ -274,6 +279,8 @@ a {
   font-size: 1.6rem;
   margin-top: 20px;
   margin-bottom: 70px;
+  max-width: 1000px;
+  margin: 20px auto 70px auto;
 }
 
 .topBar {
@@ -415,6 +422,11 @@ input[type=checkbox]:checked + ul {
 
 .aboutInfo h3 span {
   display: block;
+}
+
+.aboutImg {
+  -webkit-filter: grayscale(100%) contrast(85%);
+          filter: grayscale(100%) contrast(85%);
 }
 
 .aboutDetails {
@@ -657,7 +669,7 @@ form input::placeholder, form textarea::placeholder {
   .aboutInfo h2 {
     font-size: 4rem;
     position: absolute;
-    left: 200px;
+    right: 3vw;
     top: 70px;
     margin-top: initial;
     margin-bottom: initial;
@@ -704,5 +716,141 @@ form input::placeholder, form textarea::placeholder {
   }
   .sns li a {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 940px) {
+  .topBar {
+    background-color: initial;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
+  }
+  .title {
+    font-size: 7rem;
+  }
+  .subtitle {
+    font-size: 2.3rem;
+  }
+  .aboutImg {
+    max-width: 518px;
+    -ms-flex-preferred-size: calc(60% - 10px);
+        flex-basis: calc(60% - 10px);
+    -webkit-transition: -webkit-filter 0.8s;
+    transition: -webkit-filter 0.8s;
+    transition: filter 0.8s;
+    transition: filter 0.8s, -webkit-filter 0.8s;
+  }
+  .aboutImg:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .aboutTitles {
+    -ms-flex-preferred-size: calc(40% - 10px);
+        flex-basis: calc(40% - 10px);
+  }
+  .aboutInfo {
+    max-width: 940px;
+  }
+  .aboutInfo h2 {
+    right: 7vw;
+    left: initial;
+    top: 150px;
+    font-size: 4.5rem;
+  }
+  .aboutInfo h3 {
+    font-size: 1.8rem;
+    bottom: 100px;
+  }
+  a.resume {
+    -webkit-transition: color, background-color, border-color, 0.4s;
+    transition: color, background-color, border-color, 0.4s;
+  }
+  a.resume:hover,
+  a.resume:focus {
+    color: #EBEBEB;
+    background-color: #5F8F97;
+    border-color: #818181;
+  }
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .project img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 720px;
+            flex: 0 1 720px;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+    z-index: -1;
+  }
+  .project .projectInfo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 300px;
+            flex: 0 1 300px;
+  }
+  .project .projectInfo h2 {
+    position: absolute;
+    z-index: 5;
+    -webkit-transition: font-size 0.4s;
+    transition: font-size 0.4s;
+  }
+  .project .projectInfo p {
+    margin-top: 55px;
+    -webkit-transition: margin-top 0.4s;
+    transition: margin-top 0.4s;
+  }
+  .project:hover .projectInfo h2 {
+    font-size: 6rem;
+  }
+  .project:hover .projectInfo p {
+    margin-top: 120px;
+  }
+  .project:hover img {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .bodyLink:hover, .bodyLink:focus {
+    color: #5F8F97;
+  }
+  .bodyLink:hover::before, .bodyLink:focus::before {
+    background-color: #5F8F97;
+  }
+  .sns li a {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+  .sns li a:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  form {
+    max-width: 900px;
+  }
+  .formBtn {
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+  }
+  .formBtn:hover {
+    background-color: #5F8F97;
   }
 }

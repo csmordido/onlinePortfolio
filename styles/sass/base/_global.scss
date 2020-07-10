@@ -14,8 +14,10 @@ a {
 .bodyLink {
   font-size: 1.1rem;
   font-weight: 400;
+  color: $color-dark-grey;
   position: relative;
   left: 50px;
+  transition: color 0.4s;
   &::before {
     content: '';
     position: absolute;
@@ -24,6 +26,7 @@ a {
     background-color: $color-dark-grey;
     top: 13px;
     left: -50px;
+    transition: background-color 0.4s;
   }
 }
 
@@ -48,4 +51,6 @@ a {
   font-size: 1.6rem;
   margin-top: 20px;
   margin-bottom: 70px;
+  max-width: 1000px;
+  margin: 20px auto 70px auto;
 }
