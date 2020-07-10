@@ -55,7 +55,7 @@
     h2 {
       font-size: 4rem;
       position: absolute;
-      left: 200px;
+      right: 3vw;
       top: 70px;
       margin-top: initial;
       margin-bottom: initial;
@@ -161,6 +161,17 @@
     }
   }
 
+  a.resume {
+    transition: color, background-color, border-color, 0.4s;
+  }
+
+  a.resume:hover, 
+  a.resume:focus {
+    color: $color-light-grey;
+    background-color: $color-teal;
+    border-color: $color-dark-grey;
+  }
+
   .project {
     display: flex;
     justify-content: flex-end;
@@ -208,5 +219,24 @@
     background-color: $color-teal;
   }
 
+  .sns li a {
+    transition: transform 0.4s;
+  }
+
+  .sns li a:hover {
+    transform: rotate(360deg);
+  } 
+
+  form {
+    max-width: 900px;
+  }
+
+  .formBtn {
+    transition: background-color 0.4s;
+  }
+
+  .formBtn:hover {
+    background-color: $color-teal;
+  }
 
 }
