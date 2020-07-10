@@ -283,6 +283,14 @@ a {
   margin: 20px auto 70px auto;
 }
 
+footer {
+  font-size: 0.9rem;
+  background-color: #5F8F97;
+  color: #EBEBEB;
+  padding: 10px;
+  text-align: center;
+}
+
 .topBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,7 +395,7 @@ input[type=checkbox]:checked + ul {
 .intro {
   font-weight: 500;
   font-size: 3.4rem;
-  height: 100vh;
+  height: 95vh;
   padding-top: 25vh;
 }
 
@@ -404,6 +412,10 @@ input[type=checkbox]:checked + ul {
   font-size: 1.3rem;
   line-height: 3;
   color: #818181;
+}
+
+.indexFooter {
+  height: 5vh;
 }
 
 .aboutInfo {
