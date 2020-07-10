@@ -511,6 +511,7 @@ a.resume {
 
 .projTechs {
   font-size: 1rem;
+  color: #5F8F97;
   margin: 70px 0 110px 0;
 }
 
@@ -689,7 +690,8 @@ form input::placeholder, form textarea::placeholder {
     text-align: left;
     margin-left: 10px;
   }
-  .aboutImg, .aboutTitles {
+  .aboutImg,
+  .aboutTitles {
     -ms-flex-preferred-size: calc(50% - 10px);
         flex-basis: calc(50% - 10px);
   }
@@ -724,6 +726,40 @@ form input::placeholder, form textarea::placeholder {
     background-color: initial;
     -webkit-box-shadow: initial;
             box-shadow: initial;
+  }
+  .topBar nav label {
+    display: none;
+  }
+  .logo {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+  .logo:hover,
+  .logo:focus {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .dropDownMenu {
+    height: initial;
+    opacity: 1;
+    overflow: visible;
+    visibility: initial;
+    position: initial;
+    background-color: initial;
+  }
+  .dropDownMenu li {
+    display: inline-block;
+  }
+  .dropDownMenu li a {
+    font-size: 1.3rem;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .dropDownMenu li a:hover,
+  .dropDownMenu li a:focus {
+    color: #818181;
   }
   .title {
     font-size: 7rem;
@@ -827,10 +863,12 @@ form input::placeholder, form textarea::placeholder {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  .bodyLink:hover, .bodyLink:focus {
+  .bodyLink:hover,
+  .bodyLink:focus {
     color: #5F8F97;
   }
-  .bodyLink:hover::before, .bodyLink:focus::before {
+  .bodyLink:hover::before,
+  .bodyLink:focus::before {
     background-color: #5F8F97;
   }
   .sns li a {
@@ -843,8 +881,23 @@ form input::placeholder, form textarea::placeholder {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+  form input,
+  form textarea {
+    -webkit-transition: -webkit-box-shadow 0.4s;
+    transition: -webkit-box-shadow 0.4s;
+    transition: box-shadow 0.4s;
+    transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+  }
   form {
     max-width: 900px;
+  }
+  form input:focus {
+    -webkit-box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.3);
+  }
+  form textarea:focus {
+    -webkit-box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.3);
   }
   .formBtn {
     -webkit-transition: background-color 0.4s;
