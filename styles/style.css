@@ -391,6 +391,10 @@ input[type=checkbox]:checked + ul {
   padding-top: 25vh;
 }
 
+.intro p {
+  word-break: break-all;
+}
+
 .intro .greyText {
   color: #818181;
 }

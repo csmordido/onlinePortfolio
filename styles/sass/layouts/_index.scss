@@ -3,6 +3,9 @@
   font-size: 3.4rem;
   height: 100vh;
   padding-top: 25vh;
+  p {
+    word-break: break-all;
+  }
   .greyText {
     color: $color-dark-grey;
   }
