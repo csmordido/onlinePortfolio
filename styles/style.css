@@ -288,7 +288,15 @@ footer {
   background-color: #5F8F97;
   color: #EBEBEB;
   padding: 10px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .topBar {
@@ -395,8 +403,8 @@ input[type=checkbox]:checked + ul {
 .intro {
   font-weight: 500;
   font-size: 3.4rem;
-  height: 95vh;
-  padding-top: 25vh;
+  height: 92.5vh;
+  padding-top: 22vh;
 }
 
 .intro p {
@@ -415,7 +423,7 @@ input[type=checkbox]:checked + ul {
 }
 
 .indexFooter {
-  height: 5vh;
+  height: 7.5vh;
 }
 
 .aboutInfo {
@@ -634,6 +642,15 @@ form input::placeholder, form textarea::placeholder {
   padding: 13px 20px;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .intro {
+    height: 95vh;
+  }
+  .indexFooter {
+    height: 5vh;
+  }
 }
 
 @media (min-width: 768px) {

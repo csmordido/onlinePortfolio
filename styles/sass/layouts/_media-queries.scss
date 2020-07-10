@@ -1,3 +1,14 @@
+////////// LANDSCAPE PHONES //////////
+
+@media (min-width: 480px) {
+  .intro {
+    height: 95vh;
+  }
+  .indexFooter {
+    height: 5vh;
+  }
+}
+
 ////////// TABLET LAYOUT //////////
 
 @media (min-width: 768px) {
