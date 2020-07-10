@@ -225,6 +225,7 @@
       filter: grayscale(100%);
       transition: transform 0.4s;
       z-index: -1;
+      max-width: 720px;
     }
     .projectInfo {
       flex: 0 1 300px;

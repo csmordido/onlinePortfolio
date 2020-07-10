@@ -473,9 +473,9 @@ input[type=checkbox]:checked + ul {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -867,6 +867,7 @@ form input::placeholder, form textarea::placeholder {
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s;
     z-index: -1;
+    max-width: 720px;
   }
   .project .projectInfo {
     -webkit-box-flex: 0;
