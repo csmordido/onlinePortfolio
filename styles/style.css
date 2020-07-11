@@ -499,16 +499,6 @@ input[type=checkbox]:checked + ul {
   margin-top: 5px;
 }
 
-a.resume {
-  color: #818181;
-  font-size: 1rem;
-  border: 3px solid #5F8F97;
-  padding: 13px 20px;
-  border-radius: 50px;
-  cursor: pointer;
-  display: inline-block;
-}
-
 .project {
   margin-bottom: 120px;
 }
