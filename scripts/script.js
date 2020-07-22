@@ -22,10 +22,7 @@ app.changeHello = function() {
     let word = app.hello[n];
     $(".intro p")
     .text(word);
-    if (!$(".intro").length) {
-      clearInterval(greeting);
-    }
-  }, 3000);
+  }, 2000);
 }
 
 app.init = function() {
