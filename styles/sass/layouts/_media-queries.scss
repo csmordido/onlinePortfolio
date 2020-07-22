@@ -203,17 +203,6 @@
     }
   }
 
-  a.resume {
-    transition: color, background-color, border-color, 0.4s;
-  }
-
-  a.resume:hover, 
-  a.resume:focus {
-    color: $color-light-grey;
-    background-color: $color-teal;
-    border-color: $color-dark-grey;
-  }
-
   .project {
     display: flex;
     justify-content: flex-end;
@@ -268,7 +257,8 @@
     transition: transform 0.4s;
   }
 
-  .sns li a:hover {
+  .sns li a:hover,
+  .sns li a:focus {
     transform: rotate(360deg);
   } 
 
@@ -295,7 +285,8 @@
     transition: background-color 0.4s;
   }
 
-  .formBtn:hover {
+  .formBtn:hover,
+  .formBtn:focus {
     background-color: $color-teal;
   }
 }

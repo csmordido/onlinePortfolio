@@ -824,16 +824,6 @@ form input::placeholder, form textarea::placeholder {
     font-size: 1.8rem;
     bottom: 100px;
   }
-  a.resume {
-    -webkit-transition: color, background-color, border-color, 0.4s;
-    transition: color, background-color, border-color, 0.4s;
-  }
-  a.resume:hover,
-  a.resume:focus {
-    color: #EBEBEB;
-    background-color: #5F8F97;
-    border-color: #818181;
-  }
   .project {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -905,7 +895,8 @@ form input::placeholder, form textarea::placeholder {
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s;
   }
-  .sns li a:hover {
+  .sns li a:hover,
+  .sns li a:focus {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -931,7 +922,8 @@ form input::placeholder, form textarea::placeholder {
     -webkit-transition: background-color 0.4s;
     transition: background-color 0.4s;
   }
-  .formBtn:hover {
+  .formBtn:hover,
+  .formBtn:focus {
     background-color: #5F8F97;
   }
 }
