@@ -17,19 +17,12 @@ app.hello = [
 ]
 
 app.changeHello = function() {
-  let greeting = setInterval(function() {
-    n = Math.floor(Math.random() * app.hello.length);
-    let word = app.hello[n];
-    $(".intro p")
-    .text(word);
+  setInterval(function() {
+    index = Math.floor(Math.random() * app.hello.length);
+    let word = app.hello[index];
+    const greeting = document.querySelector(".intro p");
+    greeting.innerHTML = word;
   }, 2000);
 }
 
-app.init = function() {
-  app.changeHello();
-}
-
-
-$(document).ready(function(){
-  app.init();
-});
+app.changeHello();
