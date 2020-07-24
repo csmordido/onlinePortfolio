@@ -51,8 +51,7 @@
       </ul>
     </div>
 
-    <form action="https://formspree.io/mgennbkk"
-    method="POST">
+    <form name="submit-to-google-sheet">
       <fieldset>
         <legend>Contact Form</legend>
         <p>All fields are required.</p>
@@ -75,6 +74,14 @@
   <footer class="indexFooter">
     <p>eyelmordido.com | 2020</p>
   </footer>
+
+  <!-- POLYFILLS FOR FORM NEW METHODS -->
+  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+  <!-- EXTERNAL SCRIPT -->
+  <script src="./scripts/contact.js"></script>
   
 </body>
 </html>
