@@ -606,7 +606,7 @@ form input, form textarea {
   border: transparent;
   border-bottom: 3px solid #EBEBEB;
   color: #EBEBEB;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
@@ -636,6 +636,19 @@ form input::placeholder, form textarea::placeholder {
   padding: 13px 20px;
   border-radius: 50px;
   cursor: pointer;
+  margin-top: 20px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.error {
+  text-align: left;
+  color: #9b0000;
+  margin-bottom: 30px;
+  visibility: hidden;
 }
 
 @media (min-width: 480px) {
