@@ -15,35 +15,49 @@ contact.form.addEventListener("submit", e => {
     .catch(error => console.error("Error!", error.message));
 });
 
-contact.validate = (input, errorMessage) => {
-  if (!input.checkValidity()) {
+// contact.form.addEventListener("input", (event) => {
+//   // this = event.target;
+//   console.log(event.target.value);
+//   // const validity = this.checkValidity();
+  
+// });
+
+// contact.validate = (input, errorMessage) => {
+//   if (!input.checkValidity() || !input.value) {
+//     errorMessage.style.visibility = "visible";
+//   } else {
+//     errorMessage.style.visibility = "hidden";
+//   }
+// }
+
+contact.nameInput.addEventListener("input", () => {
+  const errorMessage = document.querySelector("#name + p");
+  if (!contact.nameInput.checkValidity() || !contact.nameInput.value.trim()) {
     errorMessage.style.visibility = "visible";
   } else {
     errorMessage.style.visibility = "hidden";
   }
-}
-
-contact.nameInput.addEventListener("change", () => {
-  const errorMessage = document.querySelector("#name + p");
-  contact.validate(contact.nameInput, errorMessage);
 });
 
-contact.validateEmail = () => {
+contact.emailInput.addEventListener("input", () => {
   // const emailInputValue = document.getElementById("email").value;
-  // const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const errorMessage = document.querySelector("#email + p");
-  contact.validate(contact.emailInput, errorMessage);
-};
-
-contact.validateMessage = () => {
-  const textInputValue = document.getElementById("message").value;
-  const errorMessage = document.querySelector("#message + p");
-  if (!textInputValue.trim()) {
+  if (!contact.emailInput.checkValidity() || !validEmail.test(contact.emailInput.value)) {
     errorMessage.style.visibility = "visible";
   } else {
     errorMessage.style.visibility = "hidden";
   }
-};
+});
+
+contact.messageInput.addEventListener("input", () => {
+  const errorMessage = document.querySelector("#message + p");
+  if (!contact.messageInput.checkValidity() || !contact.messageInput.value.trim()) {
+    errorMessage.style.visibility = "visible";
+  } else {
+    errorMessage.style.visibility = "hidden";
+  }
+});
 
 
 // contact.validateName();
