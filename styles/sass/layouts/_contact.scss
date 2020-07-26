@@ -48,7 +48,7 @@ form {
     border: transparent;
     border-bottom: 3px solid $color-light-grey;
     color: $color-light-grey;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     &::placeholder {
       opacity: 1;
       color: $color-light-grey;
@@ -63,4 +63,17 @@ form {
   padding: 13px 20px;
   border-radius: 50px;
   cursor: pointer;
+  margin-top: 20px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.error {
+  text-align: left;
+  color:#9b0000;
+  margin-bottom: 30px;
+  visibility: hidden;
 }

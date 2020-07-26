@@ -57,15 +57,18 @@
         <p>All fields are required.</p>
 
         <label class="visuallyHidden" for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Name" required title="Name">
+        <input type="text" id="name" name="name" placeholder="Name" required title="Name" pattern="[a-zA-Z ,.'-]+">
+        <p class="error">*Please enter a valid name.</p>
         
         <label class="visuallyHidden" for="email">E-mail</label>
         <input type="email" id="email" name="email" placeholder="E-mail" required title="E-mail">
+        <p class="error">*Please enter a valid email address.</p>
         
         <label class="visuallyHidden" for="message">Type message here</label>
         <textarea id="message" name="message" placeholder="How can I help you?" rows="5" required title="Message"></textarea>
+        <p class="error">*Please enter a message.</p>
 
-        <button type="submit" class="formBtn">Send message</button>
+        <button type="submit" class="formBtn disabled" disabled>Send message</button>
       </fieldset>
     </form>
 
@@ -74,11 +77,6 @@
   <footer class="indexFooter">
     <p>eyelmordido.com | 2020</p>
   </footer>
-
-  <!-- POLYFILLS FOR FORM NEW METHODS -->
-  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
   <!-- EXTERNAL SCRIPT -->
   <script src="./scripts/contact.js"></script>
