@@ -582,6 +582,7 @@ form {
   background-color: #818181;
   color: #EBEBEB;
   border-radius: 5px;
+  position: relative;
 }
 
 form legend {
@@ -649,6 +650,27 @@ form input::placeholder, form textarea::placeholder {
   color: #9b0000;
   margin-bottom: 30px;
   visibility: hidden;
+}
+
+.tyMsg {
+  position: absolute;
+  z-index: 5;
+  background-color: #818181;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.tyMsg p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 100px 60px;
+  margin-bottom: initial;
+  text-align: center;
 }
 
 @media (min-width: 480px) {
