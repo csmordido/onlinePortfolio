@@ -525,6 +525,22 @@ input[type=checkbox]:checked + ul {
 .projSiteLink {
   left: 25px;
   text-align: center;
+  display: block;
+  width: 201px;
+  margin: 0 auto;
+}
+
+.projSiteLink::before {
+  left: -20px;
+  top: 10px;
+}
+
+.projSiteLink:last-of-type {
+  margin-top: 10px;
+}
+
+.projSiteLink:last-of-type::before {
+  left: -40px;
 }
 
 .projTechs {
