@@ -223,9 +223,10 @@ img {
 }
 
 .wrapper {
-  max-width: 773px;
+  max-width: 917px;
   margin: 0 auto;
   width: 100%;
+  padding: 10% 5% 5%;
 }
 
 body {
@@ -233,8 +234,8 @@ body {
   font: 300 0.91667rem "Prompt", sans-serif;
   color: var(--text-colour);
   letter-spacing: 1px;
-  -webkit-transition: background-color 1s ease-in-out, color 1s ease-in-out;
-  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 h1 {
@@ -256,15 +257,15 @@ button {
   color: var(--text-colour);
 }
 
-.light {
+button.light {
   display: none;
 }
 
-.dark .light {
+.dark-theme button.light {
   display: inline-block;
 }
 
-.dark .dark {
+.dark-theme button.dark {
   display: none;
 }
 

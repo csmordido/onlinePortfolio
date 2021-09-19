@@ -3,7 +3,7 @@ body {
   font: $light $body-copy-size/1.5 $font;
   color: var(--text-colour);
   letter-spacing: 1px;
-  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 h1 {
@@ -25,15 +25,15 @@ button {
   color: var(--text-colour);
 }
 
-.light {
+button.light {
   display: none;
 }
 
-.dark {
-  .light {
+.dark-theme {
+  button.light {
     display: inline-block;
   }
-  .dark {
+  button.dark {
     display: none;
   }
 }
