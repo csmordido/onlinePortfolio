@@ -1,66 +1,39 @@
 body {
-  background-color: $color-light-grey;
-  font: 400 100% $font;
-  color: $color-dark-grey;
+  background-color: var(--bg-colour);
+  font: $light $body-copy-size/1.5 $font;
+  color: var(--text-colour);
   letter-spacing: 1px;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
+h1 {
+  font-size: $h1-size;
+  font-weight: $regular;
+}
+  
 a {
-  text-decoration: none;
-  color: $color-teal;
-  font-weight: 500;
+  font-size: $links-size;
+  color: var(--text-colour);
+  font-weight: $semi-bold;
+  text-transform: uppercase;
 }
 
-.bodyLink {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: $color-dark-grey;
-  position: relative;
-  left: 50px;
-  transition: color 0.4s;
-  &::before {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: $color-dark-grey;
-    top: 13px;
-    left: -50px;
-    transition: background-color 0.4s;
+button {
+  border: none;
+  background-color: unset;
+  display: inline-block;
+  color: var(--text-colour);
+}
+
+.light {
+  display: none;
+}
+
+.dark {
+  .light {
+    display: inline-block;
   }
-}
-
-.tealColor {
-  color: $color-teal;
-}
-
-.content {
-  padding-top: 22vh;
-  text-align: center;
-  font-size: 1.4rem;
-  line-height: 1.2;
-}
-
-.title {
-  font-size: 3.4rem;
-  font-weight: 700;
-}
-
-.subtitle {
-  font-weight: 500;
-  font-size: 1.6rem;
-  margin-top: 20px;
-  margin-bottom: 70px;
-  max-width: 1000px;
-  margin: 20px auto 70px auto;
-}
-
-footer {
-  font-size: 0.9rem;
-  background-color: $color-teal;
-  color: $color-light-grey;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .dark {
+    display: none;
+  }
 }

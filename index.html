@@ -12,40 +12,44 @@
   <link rel="stylesheet" href="./styles/style.css">
 
   <!-- FAVICON -->
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">  
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">   -->
+
+  <!-- ICONS -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
 </head>
 
 <body>
 
   <!-- HEADER STARTS -->
   <header class="topBar">
-    <a href="index.html"><img src="./assets/logo-15.png" alt="" class="logo"></a>
+    <a class="logo" href="index.html">Eyel Mordido</a>
     <!-- NAVIGATION STARTS -->
     <nav> 
-      <label for="menu"><span class="visuallyHidden">Drop Down Menu</span><div class="hamburgerMenu"></div></label>
-      <input type="checkbox" id="menu">
-
-      <ul class="dropDownMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="main-menu">
+        <!-- <li><a href="work.html">Work</a></li> -->
+        <li>
+          <button type="button" class="dark icon"><i data-feather="moon"></i></button>
+          <button type="button" class="light icon"><i data-feather="sun"></i></button>
+        </li>
       </ul>
     </nav> <!-- NAVIGATION ENDS -->
   </header> <!-- HEADER ENDS -->
 
   <!-- MAIN STARTS -->
-  <main class="intro wrapper">
-    <p>Hello!</p>
-    <h1 class="tealColor"><span class="greyText">I'm</span> Eyel Mordido <span class="occupation">A Front-End Developer</span></h1>
+  <main class="wrapper">
+    <h1 class="under-maintenance">Hello, this portfolio is currently being updated, please re-visit at a later time.</h1>
   </main> <!-- MAIN ENDS -->
 
-  <footer class="indexFooter">
-    <p>eyelmordido.com | 2020</p>
-  </footer>
+  <!-- <footer class="indexFooter">
+    <p>Designed and built by Eyel Mordido | 2021</p>
+  </footer> -->
 
   <!--  EXTERNAL SCRIPT -->
-  <script src="./scripts/index.js"></script>
+  <script src="./scripts/changeTheme.js"></script>
+  <script>
+    feather.replace();
+  </script>
 
 </body>
 </html>
