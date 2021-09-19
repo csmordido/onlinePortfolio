@@ -11,5 +11,23 @@
 
   .logo {
     text-decoration: none;
+    line-height: 0;
   }
+}
+
+.logo-img {
+  display: none; //REMOVE LATER??
+  height: 1.375rem;
+  width: auto;
+}
+
+.logo-name {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 0;
+  padding-left: 0.37rem;
+  // overflow: hidden;
+  // max-width: 0;
+  transition: max-width 0.3s;
 }
