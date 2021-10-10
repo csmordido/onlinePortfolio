@@ -7,7 +7,7 @@
   z-index: 10;
   top: 0;
   left: 0;
-  padding: $body-copy-size 5%;
+  padding: $nav-padding 5vw;
 
   .logo {
     text-decoration: none;
@@ -16,13 +16,13 @@
 }
 
 .logo-img {
-  display: none; //REMOVE LATER??
-  height: 1.375rem;
+  // display: none; //REMOVE LATER??
+  height: $body-copy-size;
   width: auto;
 }
 
 .logo-name {
-  display: inline-block;
+  display: none;
   position: relative;
   top: 2px;
   left: 0;
@@ -30,4 +30,14 @@
   // overflow: hidden;
   // max-width: 0;
   transition: max-width 0.3s;
+}
+
+.change-theme-btns {
+  display: none;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  column-gap: $column-gap;
 }

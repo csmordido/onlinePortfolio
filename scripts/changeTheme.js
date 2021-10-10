@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const lightBtn = document.querySelector('.light');
     const body = document.querySelector('body');
 
-    function changeThemeOnClick(btn, bgColourVal, txtColourVal) {
+    function changeThemeOnClick(btn, txtColourVal) {
       
       btn.addEventListener('click', function() {
-        document.documentElement.style.setProperty('--bg-colour', bgColourVal);
+        // document.documentElement.style.setProperty('--bg-colour', bgColourVal);
         document.documentElement.style.setProperty('--text-colour', txtColourVal);
 
-        let bgColour = getComputedStyle(document.documentElement).getPropertyValue('--bg-colour');
+        // let bgColour = getComputedStyle(document.documentElement).getPropertyValue('--bg-colour');
         
-        if (bgColour === '#351d7b') {
+        if (body.classList.contains('dark-theme') === false) {
           body.classList.add('dark-theme');
         } else {
           body.classList.remove('dark-theme');
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   
-    changeThemeOnClick(darkBtn, '#351d7b', '#a68af5');
-    changeThemeOnClick(lightBtn, '#d9cdf8', '#532cbf');
+    changeThemeOnClick(darkBtn, '#a68af5');
+    changeThemeOnClick(lightBtn, '#532cbf');
     
   }
   
