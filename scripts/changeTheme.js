@@ -9,10 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function changeThemeOnClick(btn, txtColourVal) {
       
       btn.addEventListener('click', function() {
-        // document.documentElement.style.setProperty('--bg-colour', bgColourVal);
         document.documentElement.style.setProperty('--text-colour', txtColourVal);
-
-        // let bgColour = getComputedStyle(document.documentElement).getPropertyValue('--bg-colour');
         
         if (body.classList.contains('dark-theme') === false) {
           body.classList.add('dark-theme');
@@ -23,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   
-    changeThemeOnClick(darkBtn, '#a68af5');
+    changeThemeOnClick(darkBtn, '#d9cdf8');
     changeThemeOnClick(lightBtn, '#532cbf');
     
   }

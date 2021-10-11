@@ -1,0 +1,42 @@
+$project-img-height: 14.581rem;
+$project-section-row-gap: 0.626rem;
+$project-container-row-gap: 3.021rem;
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.img-container {
+  background-color: var(--text-colour);
+}
+
+.project-img {
+  height: $project-img-height;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  margin-top: $project-section-row-gap;
+}
+
+.project-container {
+  margin-bottom: $project-container-row-gap;
+}
+
+#work {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  transition: left 0.5s;
+  overflow: hidden;
+}
+
+.work-hidden {
+  left: 100vw;
+  max-height: 0;
+  padding: unset;
+} 

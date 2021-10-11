@@ -1,9 +1,18 @@
 main {
   height: 100vh;
+  position: relative;
 }
 
-.under-maintenance {
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
+#intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
 }
+
+.intro-hidden {
+  right: 100vw;
+  overflow: hidden;
+  height: 0;
+  padding: unset;
+} 

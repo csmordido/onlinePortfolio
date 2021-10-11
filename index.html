@@ -27,10 +27,14 @@
   <header class="topBar">
 
     <!-- LOGO -->
-    <a class="logo" href="index.html">
-      <img class="logo-img" src="assets/logo-purple.svg">
-      <p class="logo-name">Eyel Mordido</p>
-    </a>
+    <ul>
+      <li>
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="assets/logo-purple.svg">
+        </a>
+      </li>
+      <li><p class="logo-name">Eyel Mordido</p></li>
+    </ul>
 
     <!-- CHANGE THEME BUTTONS -->
     <div class="change-theme-btns">
@@ -41,8 +45,8 @@
     <!-- NAVIGATION STARTS -->
     <nav> 
       <ul class="main-menu">
-        <li><a title="Home" href="index.html">Home</a></li>
-        <li><a title="Work" href="work.html">Work</a></li>
+        <li><a class="home-link" title="Home" href="index.html">Home</a></li>
+        <li><a class="work-link" title="Work" href="work.html">Work</a></li>
       </ul>
     </nav> <!-- NAVIGATION ENDS -->
 
@@ -50,7 +54,7 @@
 
   <!-- MAIN STARTS -->
   <main class="wrapper">
-    <section class="intro"> <!-- INTRO SECTION STARTS -->
+    <section id="intro" class="wrapper"> <!-- INTRO SECTION STARTS -->
       <p>Hello, I’m <a class="inline-link">Eyel Mordido</a> – a Front-end Developer and Designer drawn to simplicity and long conversations. I currently design and build websites for the <a class="inline-link">Agile Humanities</a> team.</p>
 
       <ul class="sns-links">
@@ -58,19 +62,88 @@
           <a title="Visit Twitter page" href="#"><i data-feather="twitter"></i></a>
         </li>
         <li>
-          <a title="Visit Guthub page" href="#"><i data-feather="github"></i></a>
+          <a title="Visit Github page" href="#"><i data-feather="github"></i></a>
         </li>
         <li>
           <a title="Visit LinkedIn profile" href="#"><i data-feather="linkedin"></i></a>
         </li>
         <li>
           <a title="Contact" href="#"><i data-feather="mail"></i></a>
+          <!-- <p>eyelmordido[at]gmail[dot]com</p> -->
         </li>
       </ul>
     </section> <!-- INTRO SECTION ENDS -->
 
-    <section class="work"> <!-- WORK SECTION STARTS -->
-      <div></div>
+    <section id="work" class="wrapper work-hidden"> <!-- WORK SECTION STARTS -->
+      <div class="project-container">
+        <header class="project-header">
+          <h2 class="project-title">Test</h2>
+          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+        </header>
+        <div class="project-details">
+          <div class="img-container">
+            <img class="project-img" src="assets/kanreact/kanreact.jpg">
+          </div>
+          <h3 class="project-info">Roles / Technologies</h3>
+          <p class="project-summary">Summary of the project. How did we solve the problem? My contributions to the project. </p>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <header class="project-header">
+          <h2 class="project-title">Test</h2>
+          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+        </header>
+        <div class="project-details">
+          <div class="img-container">
+            <img class="project-img" src="assets/kanreact/kanreact.jpg">
+          </div>
+          <h3 class="project-info">Roles / Technologies</h3>
+          <p class="project-summary">Summary of the project. How did we solve the problem? My contributions to the project. </p>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <header class="project-header">
+          <h2 class="project-title">Test</h2>
+          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+        </header>
+        <div class="project-details">
+          <div class="img-container">
+            <img class="project-img" src="assets/kanreact/kanreact.jpg">
+          </div>
+          <h3 class="project-info">Roles / Technologies</h3>
+          <p class="project-summary">Summary of the project. How did we solve the problem? My contributions to the project. </p>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <header class="project-header">
+          <h2 class="project-title">Test</h2>
+          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+        </header>
+        <div class="project-details">
+          <div class="img-container">
+            <img class="project-img" src="assets/kanreact/kanreact.jpg">
+          </div>
+          <h3 class="project-info">Roles / Technologies</h3>
+          <p class="project-summary">Summary of the project. How did we solve the problem? My contributions to the project. </p>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <header class="project-header">
+          <h2 class="project-title">Test</h2>
+          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+        </header>
+        <div class="project-details">
+          <div class="img-container">
+            <img class="project-img" src="assets/kanreact/kanreact.jpg">
+          </div>
+          <h3 class="project-info">Roles / Technologies</h3>
+          <p class="project-summary">Summary of the project. How did we solve the problem? My contributions to the project. </p>
+        </div>
+      </div>
     </section> <!-- WORK SECTION ENDS -->
   </main> <!-- MAIN ENDS -->
 
@@ -84,10 +157,11 @@
   </footer>
 
   <!--  EXTERNAL SCRIPTS -->
-  <!-- <script src="./scripts/changeTheme.js"></script> -->
   <script>
     feather.replace();
   </script>
+  <script src="./scripts/changeTheme.js"></script>
+  <script src="./scripts/toggleSectionsVisibility.js"></script>
 
 </body>
 </html>
