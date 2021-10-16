@@ -29,4 +29,6 @@ $easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 :root {
   --bg-colour: #{$primary-lighter};
   --text-colour: #{$primary};
+  --link-width: 42px;
+  --rectangle-left-pos: 0px
 }

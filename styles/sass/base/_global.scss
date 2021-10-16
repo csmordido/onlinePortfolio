@@ -5,7 +5,7 @@ body {
   font: $light $body-copy-size/1.5 $font;
   color: var(--text-colour);
   letter-spacing: 1px;
-  transition: color $colour-transition-duration ease-in-out;
+  transition: color $colour-transition-duration $easeInOutCubic;
   position: relative;
   overflow: hidden;
 }
@@ -24,7 +24,7 @@ body::before {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: height 1s ease-in-out;
+  transition: height 1s $easeInOutCubic;
 }
 
 h2 {
@@ -48,8 +48,9 @@ a {
   font-size: $links-size;
   color: var(--text-colour);
   font-weight: $semi-bold;
+  text-decoration: none;
   text-transform: uppercase;
-  transition: color $colour-transition-duration ease-in-out;
+  transition: color $colour-transition-duration $easeInOutCubic;
 }
 
 a.inline-link {
@@ -65,10 +66,11 @@ button {
   background-color: unset;
   display: inline-block;
   color: var(--text-colour);
+  transition: opacity $colour-transition-duration $easeInOutCubic;
 }
 
 button.light {
-  display: none;
+  opacity: 0;
 }
 
 .sns-links {
@@ -87,10 +89,10 @@ button.light {
   }
 
   button.light {
-    display: inline-block;
+    opacity: 1;
   }
   button.dark {
-    display: none;
+    opacity: 0;
   }
 }
 

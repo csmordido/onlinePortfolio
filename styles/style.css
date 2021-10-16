@@ -220,6 +220,9 @@ img {
 :root {
   --bg-colour: #d9cdf8;
   --text-colour: #532cbf;
+  --link-width: 42px;
+  --rectangle-left-pos: 0px
+;
 }
 
 .wrapper {
@@ -234,8 +237,8 @@ body {
   font: 300 0.91667rem "Prompt", sans-serif;
   color: var(--text-colour);
   letter-spacing: 1px;
-  -webkit-transition: color 1.2s ease-in-out;
-  transition: color 1.2s ease-in-out;
+  -webkit-transition: color 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: color 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   position: relative;
   overflow: hidden;
 }
@@ -254,8 +257,8 @@ body::before {
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-transition: height 1s ease-in-out;
-  transition: height 1s ease-in-out;
+  -webkit-transition: height 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: height 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 h2 {
@@ -279,9 +282,10 @@ a {
   font-size: 0.814rem;
   color: var(--text-colour);
   font-weight: 600;
+  text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: color 1.2s ease-in-out;
-  transition: color 1.2s ease-in-out;
+  -webkit-transition: color 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: color 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 a.inline-link {
@@ -297,10 +301,12 @@ button {
   background-color: unset;
   display: inline-block;
   color: var(--text-colour);
+  -webkit-transition: opacity 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 button.light {
-  display: none;
+  opacity: 0;
 }
 
 .sns-links {
@@ -321,11 +327,11 @@ button.light {
 }
 
 .dark-theme button.light {
-  display: inline-block;
+  opacity: 1;
 }
 
 .dark-theme button.dark {
-  display: none;
+  opacity: 0;
 }
 
 footer {
@@ -385,10 +391,6 @@ footer p {
   transition: max-width 0.3s;
 }
 
-.change-theme-btns {
-  display: none;
-}
-
 .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,6 +400,21 @@ footer p {
           align-items: center;
   -webkit-column-gap: 1.375rem;
           column-gap: 1.375rem;
+  position: relative;
+}
+
+.rectangle {
+  display: block;
+  position: absolute;
+  padding: 0.9rem 1.7rem;
+  top: -0.35rem;
+  left: calc(var(--rectangle-left-pos) - 0.6rem);
+  height: 0.814rem;
+  width: var(--link-width);
+  border: 3px solid var(--text-colour);
+  -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: -1;
 }
 
 main {

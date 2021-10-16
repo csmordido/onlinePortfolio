@@ -26,17 +26,29 @@
   top: 2px;
   left: 0;
   padding-left: 0.37rem;
-  // overflow: hidden;
-  // max-width: 0;
   transition: max-width 0.3s;
 }
 
-.change-theme-btns {
-  display: none;
-}
+// .change-theme-btns {
+//   display: none;
+// }
 
 .main-menu {
   display: flex;
   align-items: center;
   column-gap: $column-gap;
+  position: relative;
+}
+
+.rectangle {
+  display: block;
+  position: absolute;
+  padding: 0.9rem 1.7rem;
+  top: -0.35rem;
+  left: calc(var(--rectangle-left-pos) - 0.6rem);
+  height: $links-size;
+  width: var(--link-width);
+  border: 3px solid var(--text-colour);
+  transition: all 1s $easeInOutCubic;
+  z-index: -1;
 }
