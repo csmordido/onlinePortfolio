@@ -7,6 +7,11 @@ body {
   letter-spacing: 1px;
   transition: color $colour-transition-duration ease-in-out;
   position: relative;
+  overflow: hidden;
+}
+
+.unset-overflow {
+  overflow-y: scroll;
 }
 
 body::before {

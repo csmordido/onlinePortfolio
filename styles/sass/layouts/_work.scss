@@ -29,14 +29,10 @@ $project-container-row-gap: 3.021rem;
 #work {
   position: absolute;
   top: 0;
-  left: 0;
-  height: auto;
-  transition: left 0.5s;
-  overflow: hidden;
+  left: 100vw;
+  transition: left 1s $easeInOutCubic;
 }
 
-.work-hidden {
-  left: 100vw;
-  max-height: 0;
-  padding: unset;
+#work.work-visible {
+  left: 0;
 } 

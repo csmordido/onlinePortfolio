@@ -237,6 +237,11 @@ body {
   -webkit-transition: color 1.2s ease-in-out;
   transition: color 1.2s ease-in-out;
   position: relative;
+  overflow: hidden;
+}
+
+.unset-overflow {
+  overflow-y: scroll;
 }
 
 body::before {
@@ -403,16 +408,13 @@ main {
 #intro {
   position: absolute;
   top: 0;
-  right: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  right: 100vw;
+  -webkit-transition: right 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: right 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.intro-hidden {
-  right: 100vw;
-  overflow: hidden;
-  height: 0;
-  padding: unset;
+#intro.intro-visible {
+  right: 0;
 }
 
 .project-header {
@@ -449,15 +451,11 @@ main {
 #work {
   position: absolute;
   top: 0;
-  left: 0;
-  height: auto;
-  -webkit-transition: left 0.5s;
-  transition: left 0.5s;
-  overflow: hidden;
+  left: 100vw;
+  -webkit-transition: left 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: left 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.work-hidden {
-  left: 100vw;
-  max-height: 0;
-  padding: unset;
+#work.work-visible {
+  left: 0;
 }
