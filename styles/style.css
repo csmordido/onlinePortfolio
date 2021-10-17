@@ -534,7 +534,7 @@ main {
 }
 
 .project-img {
-  height: 14.581rem;
+  height: 27rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -544,8 +544,17 @@ main {
   margin-top: 0.626rem;
 }
 
+.project-tools {
+  font-size: 0.814rem;
+  font-weight: 400;
+}
+
+.project-summary {
+  margin-top: 0.814rem;
+}
+
 .project-container {
-  margin-bottom: 3.021rem;
+  margin-bottom: 5.105rem;
 }
 
 #work {

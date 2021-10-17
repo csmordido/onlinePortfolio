@@ -1,6 +1,6 @@
-$project-img-height: 14.581rem;
+$project-img-height: 27rem;
 $project-section-row-gap: 0.626rem;
-$project-container-row-gap: 3.021rem;
+$project-container-row-gap: 5.105rem;
 
 .project-header {
   display: flex;
@@ -20,6 +20,15 @@ $project-container-row-gap: 3.021rem;
 
 .project-info {
   margin-top: $project-section-row-gap;
+}
+
+.project-tools {
+  font-size: $links-size;
+  font-weight: $regular;
+}
+
+.project-summary {
+  margin-top: $links-size;
 }
 
 .project-container {
