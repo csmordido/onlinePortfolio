@@ -4,12 +4,32 @@ main {
 }
 
 #intro {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: -100vw;
   right: 100vw;
-  transition: right 1s $easeInOutCubic;
+  transition: all 1s $easeInOutCubic;
 }
 
 #intro.intro-visible {
   right: 0;
+  left: 0;
 } 
+
+.email-container{
+  position: relative;
+}
+
+.email-details {
+  font-size: $links-size;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  overflow: hidden;
+  width: 0;
+  transition: width 1s $easeInOutCubic;
+}
+
+.email-open {
+  width: 213px;
+}

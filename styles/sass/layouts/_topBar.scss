@@ -8,16 +8,28 @@
   top: 0;
   left: 0;
   padding: $nav-padding 5vw;
+}
 
-  .logo {
-    text-decoration: none;
-    line-height: 0;
-  }
+.logo {
+  line-height: 0;
+  position: relative;
 }
 
 .logo-img {
   height: $body-copy-size;
   width: auto;
+}
+
+.dark-logo {
+  opacity: 1;
+  transition: opacity $colour-transition-duration $easeInOutCubic;
+}
+
+.light-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .logo-name {
@@ -28,10 +40,6 @@
   padding-left: 0.37rem;
   transition: max-width 0.3s;
 }
-
-// .change-theme-btns {
-//   display: none;
-// }
 
 .main-menu {
   display: flex;

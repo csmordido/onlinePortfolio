@@ -4,17 +4,25 @@ document.addEventListener("DOMContentLoaded", function() {
   app.changeTheme = function() {
     const darkBtn = document.querySelector('.dark');
     const lightBtn = document.querySelector('.light');
-    const body = document.querySelector('body');
+    const body = document.body;
 
     function changeThemeOnClick(btn, txtColourVal) {
       
       btn.addEventListener('click', function() {
         document.documentElement.style.setProperty('--text-colour', txtColourVal);
+        console.log(this);
+
         
         if (body.classList.contains('dark-theme') === false) {
           body.classList.add('dark-theme');
+          darkBtn.setAttribute("disabled", true);
+          lightBtn.removeAttribute("disabled");
+
         } else {
           body.classList.remove('dark-theme');
+          lightBtn.setAttribute("disabled", true);
+          darkBtn.removeAttribute("disabled");
+
         }
       
       });

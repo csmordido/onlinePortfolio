@@ -23,29 +23,31 @@
 
 <body>
 
+  <!-- CHANGE THEME BUTTONS -->
+  <div class="change-theme-btns-container">
+    <div class="change-theme-btns">
+      <button type="button" class="dark icon"><i data-feather="moon"></i></button>
+      <button type="button" class="light icon" disabled="true"><i data-feather="sun"></i></button>
+    </div>
+  </div>
+
   <!-- HEADER STARTS -->
   <header class="topBar">
 
     <!-- LOGO -->
     <ul>
       <li class="logo">
-        <img class="logo-img" src="assets/logo-purple.svg">
+        <img class="logo-img dark-logo" src="assets/logo-purple.svg">
+        <img class="logo-img light-logo" src="assets/logo-light-purple.svg">
       </li>
-      <li><p class="logo-name">Eyel Mordido</p></li>
     </ul>
-
-    <!-- CHANGE THEME BUTTONS -->
-    <div class="change-theme-btns">
-      <button type="button" class="dark icon"><i data-feather="moon"></i></button>
-      <button type="button" class="light icon"><i data-feather="sun"></i></button>
-    </div>
 
     <!-- NAVIGATION STARTS -->
     <nav> 
       <ul class="main-menu">
-        <li><a class="home-link" title="Home" href="index.html">Home</a></li>
-        <li><a class="work-link" title="Work" href="work.html">Work</a></li>
-        <li><div class="rectangle"></div></li>
+        <li><a class="home-link" title="Home" href="">Home</a></li>
+        <li><a class="work-link" title="Work" href="">Work</a></li>
+        <li class="rectangle"></li>
       </ul>
     </nav> <!-- NAVIGATION ENDS -->
 
@@ -58,17 +60,17 @@
 
       <ul class="sns-links">
         <li>
-          <a title="Visit Twitter page" href="#"><i data-feather="twitter"></i></a>
+          <a title="Visit Twitter page" href="https://twitter.com/eyel_mordido"><i data-feather="twitter"></i></a>
         </li>
         <li>
-          <a title="Visit Github page" href="#"><i data-feather="github"></i></a>
+          <a title="Visit Github page" href="https://github.com/csmordido"><i data-feather="github"></i></a>
         </li>
         <li>
-          <a title="Visit LinkedIn profile" href="#"><i data-feather="linkedin"></i></a>
+          <a title="Visit LinkedIn profile" href="https://www.linkedin.com/in/eyel-mordido"><i data-feather="linkedin"></i></a>
         </li>
-        <li>
+        <li class="email-container">
           <a title="Contact" href="#"><i data-feather="mail"></i></a>
-          <!-- <p>eyelmordido[at]gmail[dot]com</p> -->
+          <p class="email-details">eyelmordido[at]gmail[dot]com</p>
         </li>
       </ul>
     </section> <!-- INTRO SECTION ENDS -->
@@ -161,6 +163,7 @@
   </script>
   <script src="./scripts/changeTheme.js"></script>
   <script src="./scripts/toggleSectionsVisibility.js"></script>
+  <script src="./scripts/revealEmail.js"></script>
 
 </body>
 </html>
