@@ -1,6 +1,11 @@
 main {
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+.unset-overflow main {
+  overflow-y: scroll;
 }
 
 #intro {

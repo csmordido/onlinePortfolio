@@ -198,7 +198,7 @@ textarea {
   box-sizing: border-box;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -228,8 +228,8 @@ img {
 .wrapper {
   max-width: 917px;
   margin: 0 auto;
-  width: 100%;
-  padding: 14.581rem 5vw 10vh 5vw;
+  width: 100vw;
+  padding: 11.216rem 5vw 10vh 5vw;
 }
 
 body {
@@ -239,12 +239,6 @@ body {
   letter-spacing: 1px;
   -webkit-transition: color 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: color 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.unset-overflow {
-  overflow-y: scroll;
 }
 
 body::before {
@@ -302,10 +296,9 @@ a.inline-link {
 
 .change-theme-btns-container {
   position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  bottom: 15vh;
   right: 5vw;
+  z-index: 10;
 }
 
 .change-theme-btns-container .change-theme-btns {
@@ -375,7 +368,7 @@ button.light {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   padding: 2.324rem 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,6 +376,7 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 10;
 }
 
 footer p {
@@ -401,7 +395,7 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -471,6 +465,11 @@ footer p {
 main {
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+.unset-overflow main {
+  overflow-y: scroll;
 }
 
 #intro {
@@ -541,10 +540,12 @@ main {
   position: absolute;
   top: 0;
   left: 100vw;
-  -webkit-transition: left 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: left 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  right: -100vw;
+  -webkit-transition: left 1s cubic-bezier(0.645, 0.045, 0.355, 1), right 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: left 1s cubic-bezier(0.645, 0.045, 0.355, 1), right 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 #work.work-visible {
   left: 0;
+  right: 0;
 }

@@ -30,9 +30,11 @@ $project-container-row-gap: 3.021rem;
   position: absolute;
   top: 0;
   left: 100vw;
-  transition: left 1s $easeInOutCubic;
+  right: -100vw;
+  transition: left 1s $easeInOutCubic, right 1s $easeInOutCubic;
 }
 
 #work.work-visible {
   left: 0;
+  right: 0;
 } 

@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 917px;
   margin: 0 auto;
-  width: 100%;
-  padding: $block-spacing-from-header 5vw 10vh 5vw;
+  width: 100vw;
+  padding: $mobile-block-spacing-from-header 5vw 10vh 5vw;
 }

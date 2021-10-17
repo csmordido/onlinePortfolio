@@ -7,12 +7,6 @@ body {
   color: var(--text-colour);
   letter-spacing: 1px;
   transition: color $colour-transition-duration $easeInOutCubic;
-  position: relative;
-  overflow: hidden;
-}
-
-.unset-overflow {
-  overflow-y: scroll;
 }
 
 body::before {
@@ -69,9 +63,9 @@ a.inline-link {
 
 .change-theme-btns-container {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 15vh;
   right: 5vw;
+  z-index: 10;
 
   .change-theme-btns {
     position: relative;
@@ -141,10 +135,11 @@ button.light {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   padding: $nav-padding 5vw;
   display: flex;
   justify-content: flex-end;
+  z-index: 10;
 
   p {
     font-size: $footer-text-size;

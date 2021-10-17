@@ -11,7 +11,7 @@ $regular: 400;
 $medium: 500;
 $semi-bold: 600;
 $bold: 700;
-///// Modular scale configs: base = 22px; ration = 1.3
+///// Modular scale configs: base = 22px; ratio = 1.3
 $h2-size: 2.324rem;
 $body-copy-size: 1.375rem;
 $links-size: 0.814rem;
@@ -19,7 +19,8 @@ $footer-text-size: 0.481rem;
 
 ///// LAYOUT /////
 $nav-padding: 2.324rem;
-$block-spacing-from-header: 14.581rem;
+$mobile-block-spacing-from-header: 11.216rem;
+$block-spacing-from-header: 14.581rem; 
 $section-row-gap: 1.788rem;
 $column-gap: 1.375rem;
 
