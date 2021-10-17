@@ -31,10 +31,19 @@ main {
   top: 0;
   left: 30px;
   overflow: hidden;
-  width: 0;
-  transition: width 1s $easeInOutCubic;
+  max-width: 0;
+  transition: max-width 1s $easeInOutCubic;
+  @media screen and (max-width: 423px) {
+    line-height: 1.2;
+  }
+
+  span {
+    @media screen and (max-width: 423px) {
+      display: block;
+    }
+  }
 }
 
 .email-open {
-  width: 213px;
+  max-width: 213px;
 }

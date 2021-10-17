@@ -229,7 +229,7 @@ img {
   max-width: 917px;
   margin: 0 auto;
   width: 100vw;
-  padding: 11.216rem 5vw 10vh 5vw;
+  padding: 14.581rem 5vw 10vh 5vw;
 }
 
 body {
@@ -496,13 +496,25 @@ main {
   top: 0;
   left: 30px;
   overflow: hidden;
-  width: 0;
-  -webkit-transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: width 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  max-width: 0;
+  -webkit-transition: max-width 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: max-width 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@media screen and (max-width: 423px) {
+  .email-details {
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .email-details span {
+    display: block;
+  }
 }
 
 .email-open {
-  width: 213px;
+  max-width: 213px;
 }
 
 .project-header {
