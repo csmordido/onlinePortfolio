@@ -25,6 +25,8 @@ body::before {
 h2 {
   font-size: $h2-size;
   font-weight: $regular;
+  line-height: 1.2;
+  margin-bottom: $links-size;
 }
 
 h3 {

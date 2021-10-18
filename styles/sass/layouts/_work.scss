@@ -1,25 +1,69 @@
-$project-img-height: 27rem;
-$project-section-row-gap: 0.626rem;
 $project-container-row-gap: 5.105rem;
 
 .project-header {
   display: flex;
   justify-content: space-between;
   align-items: first baseline;
+  column-gap: $column-gap;
 }
 
 .img-container {
-  background-color: var(--text-colour);
+  display: block;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    opacity: unset;
+  }
+
+  &:hover .project-img,
+  &:focus .project-img {
+    filter: brightness(.7) blur(2px) grayscale(100%);
+  }
+
+  &:hover .project-img-overlay,
+  &:focus .project-img-overlay,
+  &:hover .visit-website,
+  &:focus .visit-website {
+    opacity: 1;
+  }
+}
+
+.project-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $primary-lighter;
+  mix-blend-mode: hard-light;
+}
+
+.visit-website {
+  text-transform: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  color: $primary;
+}
+
+.project-img-overlay,
+.visit-website {
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 .project-img {
-  height: $project-img-height;
+  height: auto;
   width: 100%;
   object-fit: cover;
+  transition: filter 0.4s;
 }
 
 .project-info {
-  margin-top: $project-section-row-gap;
+  margin-top: $links-size;
 }
 
 .project-tools {
