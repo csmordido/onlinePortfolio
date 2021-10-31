@@ -23,14 +23,6 @@
 
 <body>
 
-  <!-- CHANGE THEME BUTTONS -->
-  <div class="change-theme-btns-container">
-    <div class="change-theme-btns">
-      <button type="button" class="dark icon"><i data-feather="moon"></i></button>
-      <button type="button" class="light icon" disabled="true"><i data-feather="sun"></i></button>
-    </div>
-  </div>
-
   <!-- HEADER STARTS -->
   <header class="topBar">
 
@@ -58,7 +50,7 @@
     <section id="intro" class="wrapper intro-visible"> <!-- INTRO SECTION STARTS -->
       <h1 class="visually-hidden">Home</h1>
 
-      <p>Hello, I’m <a class="inline-link">Eyel Mordido</a> – a Front-end Developer and Designer drawn to simplicity and long conversations. I currently design and build websites for the <a class="inline-link" title="Visit the Agile Humanities website" href="https://agilehumanities.ca">Agile Humanities Agency</a>.</p>
+      <p>Hello, I’m Eyel Mordido – a Front-end Developer and Designer drawn to simplicity and long conversations. I currently design and build websites for the <a class="inline-link" title="Visit the Agile Humanities website" href="https://agilehumanities.ca">Agile Humanities Agency</a>.</p>
 
       <ul class="sns-links">
         <li>
@@ -83,10 +75,10 @@
       <div class="project-container">
         <header class="project-header">
           <h2 class="project-title">The Sid Sackson Portal</h2>
-          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+          <div><a title="Visit Github page" href="#" tabindex="-1"><i data-feather="github"></i></a></div>
         </header>
         <div class="project-details">
-          <a class="img-container" title="Visit website" href="https://sacksonportal.museumofplay.org/">
+          <a class="img-container" tabindex="-1" title="Visit website" href="https://sacksonportal.museumofplay.org/">
             <img alt="" class="project-img" src="assets/sackson/sackson.png">
             <div class="project-img-overlay"></div>
             <p class="visit-website">Visit website</p>
@@ -100,10 +92,10 @@
       <div class="project-container">
         <header class="project-header">
           <h2 class="project-title">KanReact</h2>
-          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+          <div><a title="Visit Github page" href="#" tabindex="-1"><i data-feather="github"></i></a></div>
         </header>
         <div class="project-details">
-          <a class="img-container" href="https://kanreact.netlify.app">
+          <a class="img-container" tabindex="-1" href="https://kanreact.netlify.app">
             <img class="project-img" src="assets/kanreact/kanreact.png">
             <div class="project-img-overlay"></div>
             <p class="visit-website">Visit website</p>
@@ -117,10 +109,10 @@
       <div class="project-container">
         <header class="project-header">
           <h2 class="project-title">Pitts Digital Collections</h2>
-          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+          <div><a title="Visit Github page" href="#" tabindex="-1"><i data-feather="github"></i></a></div>
         </header>
         <div class="project-details">
-          <a class="img-container" title="Visit website" href="">
+          <a class="img-container" tabindex="-1" title="Visit website" href="">
             <img class="project-img" src="assets/pitts/pitts.png">
             <div class="project-img-overlay"></div>
             <p class="visit-website">Visit website</p>
@@ -134,10 +126,10 @@
       <div class="project-container">
         <header class="project-header">
           <h2 class="project-title">The Sid Sackson Portal</h2>
-          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+          <div><a title="Visit Github page" href="#" tabindex="-1"><i data-feather="github"></i></a></div>
         </header>
         <div class="project-details">
-          <a class="img-container" title="Visit website" href="">
+          <a class="img-container" tabindex="-1" title="Visit website" href="">
             <img class="project-img" src="assets/sackson/sackson.png">
             <div class="project-img-overlay"></div>
             <p class="visit-website">Visit website</p>
@@ -151,10 +143,10 @@
       <div class="project-container">
         <header class="project-header">
           <h2 class="project-title">The Sid Sackson Portal</h2>
-          <div><a title="Visit Github page" href="#"><i data-feather="github"></i></a></div>
+          <div><a title="Visit Github page" href="#" tabindex="-1"><i data-feather="github"></i></a></div>
         </header>
         <div class="project-details">
-          <a class="img-container" title="Visit website" href="">
+          <a class="img-container" tabindex="-1" title="Visit website" href="">
             <img class="project-img" src="assets/sackson/sackson.png">
             <div class="project-img-overlay"></div>
             <p class="visit-website">Visit website</p>
@@ -166,6 +158,14 @@
       </div>
     </section> <!-- WORK SECTION ENDS -->
   </main> <!-- MAIN ENDS -->
+
+  <!-- CHANGE THEME BUTTONS -->
+  <div class="change-theme-btns-container">
+    <div class="change-theme-btns">
+      <button type="button" class="dark icon"><i data-feather="moon"></i></button>
+      <button type="button" class="light icon" disabled="true"><i data-feather="sun"></i></button>
+    </div>
+  </div>
 
   <footer>
     <p>Designed<br>
@@ -183,6 +183,7 @@
   <script src="./scripts/changeTheme.js"></script>
   <script src="./scripts/toggleSectionsVisibility.js"></script>
   <script src="./scripts/revealEmail.js"></script>
+  <script src="./scripts/switchPageOnKeyDown.js"></script>
 
 </body>
 </html>

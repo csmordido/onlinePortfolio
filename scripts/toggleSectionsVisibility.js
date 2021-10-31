@@ -17,6 +17,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
+  page.toggleLinkTabbing = function(container1, container2) {
+    
+    const enablelinks = container1.querySelectorAll('a');
+
+    enablelinks.forEach( link => {
+      link.tabIndex = 0;
+    });
+
+    const disableLinks = container2.querySelectorAll('a');
+
+    disableLinks.forEach( link => {
+      link.tabIndex = -1;
+    });
+
+  }
+
   page.switchPages = function(linkEl) {
 
     linkEl.addEventListener('click', function(event) {
@@ -30,12 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.add('unset-overflow');
         page.introSection.classList.remove('intro-visible');
         page.workSection.classList.add('work-visible');
+        page.toggleLinkTabbing(page.workSection, page.introSection);
 
       } else {
 
         document.body.classList.remove('unset-overflow');
-        page.introSection.classList.add('intro-visible');
         page.workSection.classList.remove('work-visible');
+        page.introSection.classList.add('intro-visible');
+        page.toggleLinkTabbing(page.introSection, page.workSection);
 
       };
       
