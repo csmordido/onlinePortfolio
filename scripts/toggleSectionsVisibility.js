@@ -17,17 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-  page.toggleLinkTabbing = function(container1, container2) {
+  page.toggleLinkTabbing = function(containerToEnableLinks, containerToDisableLinks) {
     
-    const enablelinks = container1.querySelectorAll('a');
+    const enabledlinks = containerToEnableLinks.querySelectorAll('a');
 
-    enablelinks.forEach( link => {
+    enabledlinks.forEach( link => {
       link.tabIndex = 0;
     });
 
-    const disableLinks = container2.querySelectorAll('a');
+    const disabledLinks = containerToDisableLinks.querySelectorAll('a');
 
-    disableLinks.forEach( link => {
+    disabledLinks.forEach( link => {
       link.tabIndex = -1;
     });
 
@@ -61,7 +61,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
+  page.switchPagesOnKeyDown = function() {
+    document.addEventListener('keydown', function(event) {
+      let isIntroPage = page.introSection.classList.contains('intro-visible');
+
+      if ( isIntroPage &&  event.code === 'ArrowRight' ) {
+        
+        page.moveRectangle(page.workLink);
+        document.body.classList.add('unset-overflow');
+        page.introSection.classList.remove('intro-visible');
+        page.workSection.classList.add('work-visible');
+        page.toggleLinkTabbing(page.workSection, page.introSection);
+
+      }
+
+      if ( !isIntroPage &&  event.code === 'ArrowLeft' ) {
+        
+        page.moveRectangle(page.homeLink);
+        document.body.classList.remove('unset-overflow');
+        page.workSection.classList.remove('work-visible');
+        page.introSection.classList.add('intro-visible');
+        page.toggleLinkTabbing(page.introSection, page.workSection);
+
+      }
+
+    });
+  }
+
   page.switchPages(page.workLink);
   page.switchPages(page.homeLink);
+  page.switchPagesOnKeyDown();
 
 });
+
+//ArrowRight
+//ArrowLeft
