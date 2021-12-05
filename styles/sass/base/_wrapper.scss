@@ -2,5 +2,5 @@
   max-width: 917px;
   margin: 0 auto;
   width: 100vw;
-  padding: $block-spacing-from-header 5vw 10vh 5vw;
+  padding: clamp($mobile_block-spacing-from-header, 30vh, $block-spacing-from-header) 5vw 10vh 5vw;
 }

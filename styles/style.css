@@ -229,7 +229,7 @@ img {
   max-width: 917px;
   margin: 0 auto;
   width: 100vw;
-  padding: 14.581rem 5vw 10vh 5vw;
+  padding: clamp(11.216rem, 30vh, 14.581rem) 5vw 10vh 5vw;
 }
 
 body {
@@ -298,7 +298,7 @@ a.inline-link {
 
 .change-theme-btns-container {
   position: fixed;
-  bottom: 15vh;
+  bottom: calc(1.788rem + 80px);
   right: 5vw;
   z-index: 10;
 }
@@ -370,7 +370,7 @@ button.light {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  right: 0;
   padding: 1.788rem 5vw;
   display: -webkit-box;
   display: -ms-flexbox;

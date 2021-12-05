@@ -65,7 +65,7 @@ a.inline-link {
 
 .change-theme-btns-container {
   position: fixed;
-  bottom: 15vh;
+  bottom: calc(#{$nav-padding} + 80px);
   right: 5vw;
   z-index: 10;
 
@@ -137,7 +137,7 @@ button.light {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  right: 0;
   padding: $nav-padding 5vw;
   display: flex;
   justify-content: flex-end;

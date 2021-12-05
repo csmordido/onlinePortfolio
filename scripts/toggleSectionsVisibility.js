@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const page = {};
+  const app = {};
 
-  page.workLink = document.querySelector('.work-link');
-  page.workSection = document.getElementById('work');
-  page.homeLink = document.querySelector('.home-link');
-  page.introSection = document.getElementById('intro');
-  page.rectangle = document.querySelector('.rectangle');
+  app.workLink = document.querySelector('.work-link');
+  app.workSection = document.getElementById('work');
+  app.homeLink = document.querySelector('.home-link');
+  app.introSection = document.getElementById('intro');
+  app.rectangle = document.querySelector('.rectangle');
 
-  page.moveRectangle = function(el) {
+  app.moveRectangle = function(el) {
     
     let linkWidth = el.offsetWidth;
     let leftPosition = el.offsetLeft;
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-  page.toggleLinkTabbing = function(containerToEnableLinks, containerToDisableLinks) {
+  app.toggleLinkTabbing = function(containerToEnableLinks, containerToDisableLinks) {
     
     const enabledlinks = containerToEnableLinks.querySelectorAll('a');
 
@@ -33,27 +33,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-  page.switchPages = function(linkEl) {
+  app.switchPages = function(linkEl) {
 
     linkEl.addEventListener('click', function(event) {
       
       event.preventDefault();
 
-      page.moveRectangle(this);
+      app.moveRectangle(this);
 
       if (this.classList.contains('work-link')) {
 
         document.body.classList.add('unset-overflow');
-        page.introSection.classList.remove('intro-visible');
-        page.workSection.classList.add('work-visible');
-        page.toggleLinkTabbing(page.workSection, page.introSection);
+        app.introSection.classList.remove('intro-visible');
+        app.workSection.classList.add('work-visible');
+        app.toggleLinkTabbing(app.workSection, app.introSection);
 
       } else {
 
         document.body.classList.remove('unset-overflow');
-        page.workSection.classList.remove('work-visible');
-        page.introSection.classList.add('intro-visible');
-        page.toggleLinkTabbing(page.introSection, page.workSection);
+        app.workSection.classList.remove('work-visible');
+        app.introSection.classList.add('intro-visible');
+        app.toggleLinkTabbing(app.introSection, app.workSection);
 
       };
       
@@ -61,38 +61,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-  page.switchPagesOnKeyDown = function() {
+  app.switchPagesOnKeyDown = function() {
     document.addEventListener('keydown', function(event) {
-      let isIntroPage = page.introSection.classList.contains('intro-visible');
+      let isIntroPage = app.introSection.classList.contains('intro-visible');
 
       if ( isIntroPage &&  event.code === 'ArrowRight' ) {
         
-        page.moveRectangle(page.workLink);
+        app.moveRectangle(app.workLink);
         document.body.classList.add('unset-overflow');
-        page.introSection.classList.remove('intro-visible');
-        page.workSection.classList.add('work-visible');
-        page.toggleLinkTabbing(page.workSection, page.introSection);
+        app.introSection.classList.remove('intro-visible');
+        app.workSection.classList.add('work-visible');
+        app.toggleLinkTabbing(app.workSection, app.introSection);
 
       }
 
       if ( !isIntroPage &&  event.code === 'ArrowLeft' ) {
         
-        page.moveRectangle(page.homeLink);
+        app.moveRectangle(app.homeLink);
         document.body.classList.remove('unset-overflow');
-        page.workSection.classList.remove('work-visible');
-        page.introSection.classList.add('intro-visible');
-        page.toggleLinkTabbing(page.introSection, page.workSection);
+        app.workSection.classList.remove('work-visible');
+        app.introSection.classList.add('intro-visible');
+        app.toggleLinkTabbing(app.introSection, app.workSection);
 
       }
 
     });
   }
 
-  page.switchPages(page.workLink);
-  page.switchPages(page.homeLink);
-  page.switchPagesOnKeyDown();
+  app.switchPages(app.workLink);
+  app.switchPages(app.homeLink);
+  // app.switchPagesOnKeyDown();
 
 });
-
-//ArrowRight
-//ArrowLeft

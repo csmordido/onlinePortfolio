@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const email = {};
+  const app = {};
 
-  email.emailDetails = document.querySelector('.email-details');
-  email.emailLink = document.querySelector('.email-container a');
+  app.emailDetails = document.querySelector('.email-details');
+  app.emailLink = document.querySelector('.email-container a');
 
-  email.revealEmail = function() {
+  app.revealEmail = function() {
 
-    email.emailLink.addEventListener('click', function(event) {
+    app.emailLink.addEventListener('click', function(event) {
 
       event.preventDefault();
-      email.emailDetails.classList.toggle('email-open');
+      app.emailDetails.classList.toggle('email-open');
 
     });
 
   };
 
-  email.revealEmail();
+  app.revealEmail();
 
 });
