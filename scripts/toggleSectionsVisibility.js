@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const enabledlinks = containerToEnableLinks.querySelectorAll('a');
 
     enabledlinks.forEach( link => {
-      link.tabIndex = 0;
+      link.tabIndex = '0';
     });
 
     const disabledLinks = containerToDisableLinks.querySelectorAll('a');
 
     disabledLinks.forEach( link => {
-      link.tabIndex = -1;
+      link.tabIndex = '-1';
     });
 
   }
@@ -61,32 +61,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-  app.switchPagesOnKeyDown = function() {
-    document.addEventListener('keydown', function(event) {
-      let isIntroPage = app.introSection.classList.contains('intro-visible');
+  // app.switchPagesOnKeyDown = function() {
+  //   document.addEventListener('keydown', function(event) {
+  //     let isIntroPage = app.introSection.classList.contains('intro-visible');
 
-      if ( isIntroPage &&  event.code === 'ArrowRight' ) {
+  //     if ( isIntroPage &&  event.code === 'ArrowRight' ) {
         
-        app.moveRectangle(app.workLink);
-        document.body.classList.add('unset-overflow');
-        app.introSection.classList.remove('intro-visible');
-        app.workSection.classList.add('work-visible');
-        app.toggleLinkTabbing(app.workSection, app.introSection);
+  //       app.moveRectangle(app.workLink);
+  //       document.body.classList.add('unset-overflow');
+  //       app.introSection.classList.remove('intro-visible');
+  //       app.workSection.classList.add('work-visible');
+  //       app.toggleLinkTabbing(app.workSection, app.introSection);
 
-      }
+  //     }
 
-      if ( !isIntroPage &&  event.code === 'ArrowLeft' ) {
+  //     if ( !isIntroPage &&  event.code === 'ArrowLeft' ) {
         
-        app.moveRectangle(app.homeLink);
-        document.body.classList.remove('unset-overflow');
-        app.workSection.classList.remove('work-visible');
-        app.introSection.classList.add('intro-visible');
-        app.toggleLinkTabbing(app.introSection, app.workSection);
+  //       app.moveRectangle(app.homeLink);
+  //       document.body.classList.remove('unset-overflow');
+  //       app.workSection.classList.remove('work-visible');
+  //       app.introSection.classList.add('intro-visible');
+  //       app.toggleLinkTabbing(app.introSection, app.workSection);
 
-      }
+  //     }
 
-    });
-  }
+  //   });
+  // }
 
   app.switchPages(app.workLink);
   app.switchPages(app.homeLink);

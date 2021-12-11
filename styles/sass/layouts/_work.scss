@@ -1,10 +1,17 @@
 $project-container-row-gap: 5.105rem;
+$project-header-column-gap: 1.058rem;
+$project-buttons-column-gap: 0.626rem;
 
 .project-header {
   display: flex;
   justify-content: space-between;
   align-items: first baseline;
-  column-gap: $column-gap;
+  column-gap: $project-header-column-gap;
+
+  > div {
+    display: flex;
+    column-gap: $project-buttons-column-gap;
+  }
 }
 
 .img-container {

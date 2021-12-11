@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
       
       btn.addEventListener('click', function() {
         document.documentElement.style.setProperty('--text-colour', txtColourVal);
-        console.log(this);
-
         
         if (body.classList.contains('dark-theme') === false) {
           body.classList.add('dark-theme');
