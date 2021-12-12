@@ -1,14 +1,3 @@
-main {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.unset-overflow main {
-  position: unset;
-  overflow-y: scroll;
-}
-
 #intro {
   position: fixed;
   top: 0;
