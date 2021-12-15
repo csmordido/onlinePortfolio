@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   app.homeLink = document.querySelector('.home-link');
   app.introSection = document.getElementById('intro');
   app.rectangle = document.querySelector('.rectangle');
+  app.title = document.querySelector('title');
 
   app.moveRectangle = function(el) {
     
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.add('unset-overflow');
         app.introSection.classList.remove('intro-visible');
         app.workSection.classList.add('work-visible');
+        app.title.innerText = 'Eyel Mordido - Work';
         app.toggleLinkTabbing(app.workSection, app.introSection);
 
       } else {
@@ -53,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove('unset-overflow');
         app.workSection.classList.remove('work-visible');
         app.introSection.classList.add('intro-visible');
+        app.title.innerText = 'Eyel Mordido - Home';
         app.toggleLinkTabbing(app.introSection, app.workSection);
 
       };
