@@ -31,6 +31,8 @@ main {
 .unset-overflow main {
   position: unset;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
 
 main::-webkit-scrollbar {
